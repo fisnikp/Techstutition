@@ -120,21 +120,38 @@
 
           <div class="mdl-tabs__panel is-active responsive-menu" id="step-1">
 
-            <p>step1</p>
-            <form class="mui-form">
-              <legend>Title</legend>
-              <div class="mui-textfield">
-                <input type="text" placeholder="Input 1">
-              </div>
-              <legend>Title</legend>
-              <div class="mui-textfield">
-                <input type="text" placeholder="Input 2">
-              </div>
-              <div class="mui-textfield">
-                <textarea placeholder="Textarea"></textarea>
-              </div>
-              <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
-            </form>
+
+            <legend><h4>1.Të dhënat për ndërmarrjen</h4></legend>
+              <legend>1.1 Emri i ndërmarrjes: </legend>
+                <div class="mui-textfield">
+                  <input type="text" required>
+                  <label>Emri i ndërmarrjes..</label>
+                </div>
+            <legend>1.2 Numri i regjistrimit të biznesit: </legend>
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="number" required>
+                  <label>Numri i regjistrimit të biznesit..</label>
+                </div>
+            <legend>1.3 Adresa e ndërmarrjes: </legend>
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="text" required>
+                  <label>Adresa e ndërmarrjes..</label>
+                </div>
+            <legend>1.4 Personi kontaktues: </legend>
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="text" required>
+                  <label>Personi kontaktues..</label>
+                </div>
+            <legend>1.5 Telefoni: </legend>
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="number" required>
+                  <label>Telefoni..</label>
+                </div>
+              <legend>1.6 E-mail Adresa: </legend>
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="email" required>
+                  <label>E-mail Adresa</label>
+                </div>
 
             <div class="alert alert-danger" role="alert">
               SHËNIM: Për përkufizimin e elementeve të infrastruktures ju lutemi klikoni tek <a href"#">SKEMA</a>
@@ -145,61 +162,446 @@
 
           </div>
           <div class="mdl-tabs__panel responsive-menu" id="step-2">
-            <p>step 2</p>
+
 
     <!---***************************** hapi 3 **********************************************-->
 
 
           </div>
           <div class="mdl-tabs__panel responsive-menu" id="step-3">
-            <p>step 3</p>
+
 
           </div>
 
   <!---***************************** hapi 4 **********************************************-->
 
          <div class="mdl-tabs__panel responsive-menu" id="step-4">
-           <p>step4 </p>
+
          </div>
 
  <!---***************************** hapi 5 **********************************************-->
 
 
          <div class="mdl-tabs__panel responsive-menu" id="step-5">
-           <p>step5 </p>
+
          </div>
 
 <!---***************************** hapi 6 **********************************************-->
 
          <div class="mdl-tabs__panel responsive-menu" id="step-6">
-           <p>step6 </p>
-         </div>
+
+           <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon informacion mbi të ardhurat
+             e fituara nga dhënia e linjave me qira tek operatorët tjerë.</div>
+           <legend><h4>6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h4></legend>
+             <legend>Të ardhurat</legend>
+
+          <legend>
+             <div class="row">
+                  <div class="col-md-4">
+                  <h4>6.1 Të ardhurat nga shërbimet me pakicë:</h4>
+                </div>
+                 <div class="col-md-4">
+                 <div class="mui-textfield">
+                   <input type="number" required>
+                     <label>(€)</label><br>
+                   </div>
+                 </div>
+                   <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="text" required></input>
+                       <label>Komentet</label>
+                    </div>
+                  </div>
+            </div>
+          </legend>
+          <legend>
+             <div class="row">
+                  <div class="col-md-4">
+                  <h4>6.2 Të ardhurat nga shërbimet me shumicë:</h4>
+                </div>
+                 <div class="col-md-4">
+                 <div class="mui-textfield">
+                   <input type="number" required>
+                     <label>(€)</label><br>
+                   </div>
+                 </div>
+                   <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="text" required></input>
+                       <label>Komentet</label>
+                    </div>
+                  </div>
+            </div>
+          </legend>
+          <legend>
+             <div class="row">
+                  <div class="col-md-4">
+                  <h4>6.3 Të ardhurat totale:</h4>
+                </div>
+                 <div class="col-md-4">
+                 <div class="mui-textfield">
+                   <input type="number" required>
+                     <label>(€)</label><br>
+                   </div>
+                 </div>
+                   <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="text" required></input>
+                       <label>Komentet</label>
+                    </div>
+                  </div>
+            </div>
+          </legend>
+
+          </div>
+
 
 <!---***************************** hapi 7 **********************************************-->
 
 
          <div class="mdl-tabs__panel responsive-menu" id="step-7">
-           <p>step7 </p>
-         </div>
+           <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
+              informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me pakicë.</div>
+            <legend><h4>7. Tarifat e shërbimeve me pakicë </h4></legend>
+             <legend>Tipet e linjave me qira
+               [Listoni kategoritë nga tabela e tarifave]</legend>
+
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.1 2 Mbps deri në 2 km:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.2 34 Mbps deri në 2 km:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.3 2 Mbps deri në deri 50:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.4 34Mbps deri në deri 50:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.5 2Mbps deri në kufi:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.6 34Mbps deri në kufi:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.7 2Mbps deri në UK (Londër):</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>7.8 34 Mbps deri në UK (Londër):</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+
+          </div>
+
+
+
 
 <!---***************************** hapi 8 **********************************************-->
 
 
          <div class="mdl-tabs__panel responsive-menu" id="step-8">
-           <p>step8 </p>
-         </div>
+           <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
+              informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me shumicë.</div>
+            <legend><h4>8. Tarifat e sherbimeve me shumicë </h4></legend>
+             <legend>Tipet e linjave me qira
+               [Listoni kategoritë nga tabela e tarifave]</legend>
+
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.1 2 Mbps deri në 2 km:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.2 34 Mbps deri në 2 km:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.3 2 Mbps deri në deri 50:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.4 34Mbps deri në deri 50:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.5 2Mbps deri në kufi:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.6 34Mbps deri në kufi:</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.7 2Mbps deri në UK (Londër):</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+              <legend>
+                 <div class="row">
+                      <div class="col-md-4">
+                      <h4>8.8 34 Mbps deri në UK (Londër):</h4>
+                    </div>
+                     <div class="col-md-4">
+                     <div class="mui-textfield">
+                       <input type="number" required>
+                         <label>(€)</label><br>
+                       </div>
+                     </div>
+                       <div class="col-md-4">
+                         <div class="mui-textfield">
+                           <input type="text" required></input>
+                           <label>Komentet</label>
+                        </div>
+                      </div>
+                </div>
+              </legend>
+
+          </div>
+
+        
 
 <!---***************************** hapi 9 **********************************************-->
 
          <div class="mdl-tabs__panel responsive-menu" id="step-9">
-           <p>step9 </p>
+
          </div>
 
 <!---***************************** </hapat> **********************************************-->
 
 
         </div>
-    </div>
+
 
 
 <!---***************************** footer **********************************************-->

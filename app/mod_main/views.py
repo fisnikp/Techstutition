@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for, Response
 from app import mongo
 from bson import ObjectId
 
@@ -8,14 +8,13 @@ mod_main = Blueprint('main', __name__)
 @mod_main.route('/')
 def index():
 	db = mongo.db.arkep
-	db.insert({"name": "arkep"})
 	return render_template("index.html")
 
-@mod_main.route('/form', methods=['GET', 'POST'])
+@mod_main.route('/formulari', methods=['GET', 'POST'])
 def form():
 
 	if request.method == 'GET':
-		return render_template("form.html")
+		return render_template("formulari.html")
 	elif request.method == 'POST':
 		db = mongo.db.arkep
 		form_data = request.form.to_dict()
@@ -30,18 +29,23 @@ def form():
             }
 		}
 		db.insert(data)
-		return render_template("form.html", mesazhi="Falemderit, forma u plotesua" )
+		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )
 
 	else:
 		return "Go Home, you are Drunk"
 
 @mod_main.route('/list', methods=["GET"])
 def list():
-	return 	render_template('list.html')
+	db = mongo.db.arkep
+	rekordet = db.find()
+	return 	render_template('list.html', rekordet=rekordet)
 
-@mod_main.route('/remove', methods=["POST"])
-def remove():
-	return render_template('list.html')
+
+@mod_main.route('/remove/<string:remove_id>', methods=["POST"])
+def remove(remove_id):
+	db = mongo.db.arkep
+	remove = db.remove({"_id": ObjectId(remove_id)})
+	return Response(200)
 
 @mod_main.route('/raporti/<string:report_id>')
 def raporti(report_id):

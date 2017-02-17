@@ -17,6 +17,12 @@
   text-align: center;
 }
 
+/*flex forma step 3 */
+.flex-forma {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .footeri {
   background-color: #11156D;

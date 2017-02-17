@@ -1,27 +1,97 @@
 <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"> -->
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <form method="POST">
-    Emri: <input name="emri" value=""><br />
-    Emri ndermarrje: <input name="emri_ndermarrjes" value=""><br />
-    Nr. Regjistrimit: <input name="nr_regjistrimit" value=""><br />
-    Adresa: <input name="adresa" value=""><br />
-    Personi Kontaktues <input name="personi_kontaktues" value=""><br />
-    Telefoni <input name="telefoni" value=""><br />
+<table class="bordered highlight centered table table-hover responsive">
+   <thead>
+     <tr>
+         <th data-field="id">#</th>
+         <th data-field="">Kapaciteti total i furnizimit të linjave me qira ne rrjet</th>
+         <th data-field="">Njësi</th>
+         <th data-field="">Segmente terminuese</th>
+         <th data-field="">Trunk Segmente</th>
+         <th data-field="">Segment Nderkombetare</th>
+         <th data-field="">Të tjera</th>
+         <th data-field="">Përkufizime të tjera</th>
+         <th data-field="">Të tjera 2</th>
+         <th data-field="">Përkufizime 2 të tjera</th>
+         <th data-field="">Komente</th>
+     </tr>
+   </thead>
 
-    Email <input name="email" value=""><br />
-    <button type="submit">
-        Submit
-    </button>
-</form>
-    {% if mesazhi %}
-      <h2>{{mesazhi}}</h2>
-    {% endif %}
-  </body>
-</html>
+   <tbody>
+     <tr>
+       <td>3.1</td>
+       <td>
+         <div class="mui-select">
+         <select>
+           <option>3.1.1 |Deri në dhe përfshirë 64 Kb/s</option>
+           <option>3.1.2 |Deri dhe përfshirë 2Mb/s</option>
+           <option>3.1.3 |Deri  në dhe përfshirë 34Mb/s</option>
+           <option>3.1.4 |140 Mbps </option>
+           <option>3.1.5 |STM 1</option>
+           <option>3.1.6 |STM 16</option>
+           <option>3.1.7 |STM 64</option>
+           <option>3.1.8 |Të tjera</option>
+         </select>
+         <label>Kapaciteti total i furnizimit të linjave me qira ne rrjet</label>
+       </div>
+    </td>
+
+       <td>
+         <div class="mui-textfield mui-textfield--float-label disabled">
+          <input type="text" value="Njësi">
+          <label>Njësi</label>
+          </div>
+       </td>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label">
+         <input type="text" name="" required>
+         <label>Segmente terminuese</label>
+         </div>
+       </td>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label">
+         <input type="text" name="" required>
+         <label>Trunk Segmente</label>
+         </div>
+       </td>
+
+       <td >
+         <div class="mui-textfield mui-textfield--float-label ">
+         <input type="text" name="" required>
+         <label>Segment Nderkombetare</label>
+         </div>
+       </td>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label ">
+         <input type="text" name="" required>
+         <label>Të tjera</label>
+         </div>
+       </td>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label ">
+         <input type="text" name="" required>
+         <label>Përkufizime të tjera</label>
+         </div>
+       </td>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label ">
+         <input type="text" name="" required>
+         <label>Të tjera 2</label></td>
+         </div>
+       <td>
+         <div class="mui-textfield mui-textfield--float-label ">
+           <input type="text" name="" required>
+           <label>Përkufizime 2 të tjera</label>
+         </div>
+       </td>
+       <td >
+         <div class="mui-textfield mui-textfield--float-label ">
+         <input type="text" name="" required>
+         <label>Komente</label>
+       </div>
+       </td>
+
+     </tr>
+
+   </tbody>
+ </table>

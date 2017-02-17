@@ -132,28 +132,570 @@
         <div class="alert alert-danger" role="alert">
           SHËNIM: Për përkufizimin e elementeve të infrastruktures ju lutemi klikoni tek <a href"#">SKEMA</a>
         </div>
-
+      </div>
 <!---***************************** hapi 2 **********************************************-->
 
 
-      </div>
+
       <div class="mdl-tabs__panel responsive-menu" id="step-2">
+        <div class="alert alert-info alert1" role="alert"><h3>2. Numri i linjave me qira</h3></div>
 
+          <table class="bordered highlight centered table table-hover">
+             <thead>
+               <tr>
+                  <div class="row">
+                   <th data-field="number2" class="col s1 m1 l1">#</th>
+                   <th data-field="id" class="col s3 m3 l3">Pershkrimi</th>
+                   <th data-field="name" class="col s2 m2 l2">Njesia</th>
+                   <th data-field="price" class="col s2 m2 l2">Sasia</th>
+                   <th data-field="" class="col s4 m4 l4">Komente</th>
+                 </div>
+               </tr>
+               <tr>
+                 <th data-field="id" class="col s3 m3 l3">2.0</th>
+                 <th data-field="id" class="col s3 m3 l3">Numri total i linjave me qira të ofruara nga rrjetet tjera:</th>
+               </tr>
 
+             </thead>
+
+             <tbody>
+               <tr>
+                 <td>2.1</td>
+                 <td>
+                   <div class="mui-select">
+                     <select>
+                       <option>2.1.1 Kombëtare</option>
+                       <option>2.1.2 Ndërkombëtare</option>
+                     </select>
+                     <label>Numri total i linjave me qira të ofruara për rrjetet tjera:</label>
+                   </div>
+                 </td>
+
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label disabled">
+                    <input type="text" value="LINJA">
+                    <label></label>
+                  </div>
+                 </td>
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label">
+                     <input type="number" name="" required>
+                     <label>Sasia</label>
+                   </div>
+                 </td>
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label">
+                     <input type="text" name="" required>
+                     <label>Komente</label>
+                   </div>
+                 </td>
+
+               </tr>
+               <tr>
+                 <th data-field="id" class="col s3 m3 l3">2.2</th>
+                 <th data-field="id" class="col s3 m3 l3">Numri total i linjave me qira të marra nga rrjetet tjera:</th>
+               </tr>
+               <tr>
+                 <td>2.2</td>
+                 <td>
+                   <div class="mui-select">
+                     <select>
+                       <option>2.2.1 Kombëtare</option>
+                       <option>2.2.2 Ndërkombëtare</option>
+                     </select>
+                     <label>Numri total i linjave me qira të marra për rrjetet tjera:</label>
+                   </div>
+                 </td>
+
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label disabled">
+                    <input type="text" value="LINJA">
+                    <label></label>
+                  </div>
+                 </td>
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label">
+                     <input type="number" name="" required>
+                     <label>Sasia</label>
+                   </div>
+                 </td>
+                 <td>
+                   <div class="mui-textfield mui-textfield--float-label">
+                     <input type="text" name="" required>
+                     <label>Komente</label>
+                   </div>
+                 </td>
+
+             </tbody>
+           </table>
+
+  </div>
 <!---***************************** hapi 3 **********************************************-->
 
 
-      </div>
+
       <div class="mdl-tabs__panel responsive-menu" id="step-3">
 
 
+          <div class="alert alert-info alert1" role="alert"><h3>3. Infrastruktura rrjetit</h3></div>
+
+          <div class="row">
+            <!-- kolona1-->
+            <div class="col-md- col-lg-5">
+            <legend> <h4>3.1 Kapaciteti total i furnizimit të linjave me qira ne rrjet: </h4></legend>
+
+              <div class="mui-select">
+              <select>
+                <option>3.1.1 |Deri në dhe përfshirë 64 Kb/s</option>
+                <option>3.1.2 |Deri dhe përfshirë 2Mb/s</option>
+                <option>3.1.3 |Deri  në dhe përfshirë 34Mb/s</option>
+                <option>3.1.4 |140 Mbps </option>
+                <option>3.1.5 |STM 1</option>
+                <option>3.1.6 |STM 16</option>
+                <option>3.1.7 |STM 64</option>
+                <option>3.1.8 |Të tjera</option>
+              </select>
+              <label>Kapaciteti total i furnizimit të linjave me qira ne rrjet</label>
+            </div>
+          </div>
+          <!-- kolona2-->
+          <div class="col-md- col-lg-3">
+          <legend> <h4>3.2 Njësi</h4></legend>
+
+            <div class="mui-textfield mui-textfield--float-label disabled">
+             <input type="text" value="Njësi">
+             <label>Njësi</label>
+             </div>
+          </div>
+          <!-- kolona3-->
+          <div class="col-md- col-lg-3">
+            <legend> <h4>3.3 Segmente terminuese</h4></legend>
+
+              <div class="mui-textfield mui-textfield--float-label">
+              <input type="text" name="" required>
+              <label>Segmente terminuese</label>
+              </div>
+          </div>
+
+          <!-- kolona4-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.4 Trunk Segmente</h4></legend>
+
+            <div class="mui-textfield mui-textfield--float-label">
+            <input type="text" name="" required>
+            <label>Trunk Segmente</label>
+            </div>
+          </div>
+
+          <!-- kolona5-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.5 Segment Nderkombetare</h4></legend>
+
+            <div class="mui-textfield mui-textfield--float-label ">
+            <input type="text" name="" required>
+            <label>Segment Nderkombetare</label>
+            </div>
+          </div>
+
+          <!-- kolona6-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.6 Të tjera</h4></legend>
+
+            <div class="mui-textfield mui-textfield--float-label ">
+            <input type="text" name="" >
+            <label>Të tjera</label>
+            </div>
+          </div>
+
+          <!-- kolona7-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.7 Përkufizime të tjera</h4></legend>
+
+            <div class="mui-textfield mui-textfield--float-label ">
+            <input type="text" name="" required>
+            <label>Përkufizime të tjera</label>
+            </div>
+          </div>
+
+             <!-- kolona8-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.8 Të tjera 2</h4></legend>
+            <div class="mui-textfield mui-textfield--float-label ">
+            <input type="text" name="" required>
+            <label>Të tjera 2</label></td>
+            </div>
+
+          </div>
+
+
+          <!-- kolona9-->
+          <div class="col-md- col-lg-4">
+            <legend> <h4>3.9 Përkufizime 2 të tjera</h4></legend>
+              <div class="mui-textfield mui-textfield--float-label ">
+                <input type="text" name="" required>
+                <label>Përkufizime 2 të tjera</label>
+              </div>
+
+          </div>
+
+          <!-- kolona10-->
+          <div class="col-md- col-lg-">
+            <legend> <h4> Komente</h4></legend>
+            <div class="mui-textfield mui-textfield--float-label ">
+            <input type="text" name="" required>
+            <label>Komente</label>
+           </div>
+
+         </div>
+
       </div>
+
+
+
+    </div>
 
 <!---***************************** hapi 4 **********************************************-->
 
      <div class="mdl-tabs__panel responsive-menu" id="step-4">
+          <div class="alert alert-info alert1" role="alert"><h3> 4. Shërbime të ofruara me pakicë </h3></div>
+          <div class="alert alert-danger" role="alert">SHËNIM: Në këtë seksion nevojitet
+             informacioni aktual në lidhje me shërbimet e ofruara tek klientet me pakice ne Kosovë.
+              Ju lutem vendosni detaje të shërbimeve te linjave me qira analoge dhe digjitale që ju furnizoni
+               përdoruesit fundor. Ju lutem jepni shifra (nqs ato ekzistojne) për bandat e distancave
+                të ndryshme(<10 km,10 km deri ne 100 km,> 100 km) te linjave me qira qe
+                  ofrohen tek klientet fundorë me pakicë.Të dhënat vendosini ne kolonen përkatëse,
+             ndersa te dhenat historike (nqs ekzistojne) vendosini në kolonën Komete</div>
 
-     </div>
+             <div class=row>
+
+               <div class="col-md- col-lg-12">
+                 <legend> <h4>4. Llojet e linjave me qira</h4></legend>
+               </div>
+               <div class="col-md- col-lg-12">
+                 <legend> <h4>Numri total i linjave me qira të shpërndara tek përdoruesit fundor me pakicë</h4></legend>
+               </div>
+
+               <div class="col-md- col-lg-12">
+
+               </div>
+
+
+             </div>
+             <ul class="collapsible" data-collapsible="accordion">
+               <li>
+                 <div class="collapsible-header"><h4>4.1 Linja analoge me qira</h4></div>
+                 <div class="collapsible-body">
+
+                    <div class="row">
+                      <div class="col-md- col-lg-2">
+                        <h4>Linja analoge me qira</h4>
+
+                          </div>
+
+                          <div class="col-md- col-lg-1">
+                            <div class="mui-textfield mui-textfield--float-label disabled">
+                             <input type="text" value="Njësi">
+                             <label>4.1.1 Njësi</label>
+                             </div>
+                          </div>
+
+                          <div class="col-md- col-lg-2">
+                            <div class="mui-textfield mui-textfield--float-label ">
+                            <input type="text" name="" required>
+                            <label>4.1.2 | Me te vegjla se 10 km</label>
+                           </div>
+                         </div>
+
+                         <div class="col-md- col-lg-2">
+                           <div class="mui-textfield mui-textfield--float-label ">
+                           <input type="text" name="" required>
+                           <label>4.1.3 | 10km deri 50km</label>
+                          </div>
+                        </div>
+
+                        <div class="col-md- col-lg-2">
+                          <div class="mui-textfield mui-textfield--float-label ">
+                          <input type="text" name="" required>
+                          <label>4.1.4 | 51km deri 100km</label>
+                         </div>
+                       </div>
+
+                       <div class="col-md- col-lg-2">
+                         <div class="mui-textfield mui-textfield--float-label ">
+                         <input type="text" name="" required>
+                         <label>4.1.5 | >100km </label>
+                        </div>
+                      </div>
+
+                      <div class="col-md- col-lg-12">
+                        <div class="mui-textfield mui-textfield--float-label ">
+                        <input type="text" name="" required>
+                        <label>  Komente</label>
+                       </div>
+                     </div>
+
+
+                    </div>
+
+
+                 </div>
+               </li>
+               <li>
+                 <div class="collapsible-header"><h4>4.2 Linja digjitale </h4></div>
+                 <div class="collapsible-body">
+                   <div class="row">
+                     <div class="col-md- col-lg-2">
+                       <h4>Linja digjitale </h4>
+
+                         </div>
+
+                         <div class="col-md- col-lg-1">
+                           <div class="mui-textfield mui-textfield--float-label disabled">
+                            <input type="text" value="Njësi">
+                            <label>4.1.1 Njësi</label>
+                            </div>
+                         </div>
+
+                         <div class="col-md- col-lg-2">
+                           <div class="mui-textfield mui-textfield--float-label ">
+                           <input type="text" name="" required>
+                           <label>4.1.2 | Me te vegjla se 10 km</label>
+                          </div>
+                        </div>
+
+                        <div class="col-md- col-lg-2">
+                          <div class="mui-textfield mui-textfield--float-label ">
+                          <input type="text" name="" required>
+                          <label>4.1.3 | 10km deri 50km</label>
+                         </div>
+                       </div>
+
+                       <div class="col-md- col-lg-2">
+                         <div class="mui-textfield mui-textfield--float-label ">
+                         <input type="text" name="" required>
+                         <label>4.1.4 | 51km deri 100km</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md- col-lg-2">
+                        <div class="mui-textfield mui-textfield--float-label ">
+                        <input type="text" name="" required>
+                        <label>4.1.5 | >100km </label>
+                       </div>
+                     </div>
+
+                     <div class="col-md- col-lg-12">
+                       <div class="mui-textfield mui-textfield--float-label ">
+                       <input type="text" name="" required>
+                       <label>  Komente</label>
+                      </div>
+                    </div>
+
+
+                   </div>
+
+                 </div>
+               </li>
+               <!---  *********** Lista 3*********  ------->
+               <li>
+                 <div class="collapsible-header"><h4>4.3 Deri ne 64 kbps</h4></div>
+                 <div class="collapsible-body">
+                   <div class="row">
+                     <div class="col-md- col-lg-2">
+                       <h4>4.3 Deri ne 64 kbps </h4>
+
+                         </div>
+
+                         <div class="col-md- col-lg-1">
+                           <div class="mui-textfield mui-textfield--float-label disabled">
+                            <input type="text" value="Njësi">
+                            <label>4.1.1 Njësi</label>
+                            </div>
+                         </div>
+
+                         <div class="col-md- col-lg-2">
+                           <div class="mui-textfield mui-textfield--float-label ">
+                           <input type="text" name="" required>
+                           <label>4.1.2 | Me te vegjla se 10 km</label>
+                          </div>
+                        </div>
+
+                        <div class="col-md- col-lg-2">
+                          <div class="mui-textfield mui-textfield--float-label ">
+                          <input type="text" name="" required>
+                          <label>4.1.3 | 10km deri 50km</label>
+                         </div>
+                       </div>
+
+                       <div class="col-md- col-lg-2">
+                         <div class="mui-textfield mui-textfield--float-label ">
+                         <input type="text" name="" required>
+                         <label>4.1.4 | 51km deri 100km</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md- col-lg-2">
+                        <div class="mui-textfield mui-textfield--float-label ">
+                        <input type="text" name="" required>
+                        <label>4.1.5 | >100km </label>
+                       </div>
+                     </div>
+
+                     <div class="col-md- col-lg-12">
+                       <div class="mui-textfield mui-textfield--float-label ">
+                       <input type="text" name="" required>
+                       <label>  Komente</label>
+                      </div>
+                    </div>
+                   </div>
+
+                 </div>
+               </li>
+               <!---  *********** Lista 4*********  ------->
+               <li>
+                 <div class="collapsible-header"><h4>4.4- 64 kbps deri ne 2Mbps</h4</div>
+                 <div class="collapsible-body">
+                   <div class="row">
+                     <div class="col-md- col-lg-2">
+                       <h4>4.4- 64 kbps deri ne 2Mbps </h4>
+
+                         </div>
+
+                         <div class="col-md- col-lg-1">
+                           <div class="mui-textfield mui-textfield--float-label disabled">
+                            <input type="text" value="Njësi">
+                            <label>4.1.1 Njësi</label>
+                            </div>
+                         </div>
+
+                         <div class="col-md- col-lg-2">
+                           <div class="mui-textfield mui-textfield--float-label ">
+                           <input type="text" name="" required>
+                           <label>4.1.2 | Me te vegjla se 10 km</label>
+                          </div>
+                        </div>
+
+                        <div class="col-md- col-lg-2">
+                          <div class="mui-textfield mui-textfield--float-label ">
+                          <input type="text" name="" required>
+                          <label>4.1.3 | 10km deri 50km</label>
+                         </div>
+                       </div>
+
+                       <div class="col-md- col-lg-2">
+                         <div class="mui-textfield mui-textfield--float-label ">
+                         <input type="text" name="" required>
+                         <label>4.1.4 | 51km deri 100km</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md- col-lg-2">
+                        <div class="mui-textfield mui-textfield--float-label ">
+                        <input type="text" name="" required>
+                        <label>4.1.5 | >100km </label>
+                       </div>
+                     </div>
+
+                     <div class="col-md- col-lg-12">
+                       <div class="mui-textfield mui-textfield--float-label ">
+                       <input type="text" name="" required>
+                       <label>  Komente</label>
+                      </div>
+                    </div>
+                   </div>
+
+                 </div>
+               </li>
+               <!---  *********** Lista 5*********  ------->
+               <li>
+                 <div class="collapsible-header"><h4>4.5- 2Mbit/s deri ne 34Mbps </h4></div>
+                 <div class="collapsible-body">
+                   <div class="row">
+                     <div class="col-md- col-lg-2">
+                       <h4>4.5- 2Mbit/s deri ne 34Mbps </h4>
+
+                         </div>
+
+                         <div class="col-md- col-lg-1">
+                           <div class="mui-textfield mui-textfield--float-label disabled">
+                            <input type="text" value="Njësi">
+                            <label>4.1.1 Njësi</label>
+                            </div>
+                         </div>
+
+                         <div class="col-md- col-lg-2">
+                           <div class="mui-textfield mui-textfield--float-label ">
+                           <input type="text" name="" required>
+                           <label>4.1.2 | Me te vegjla se 10 km</label>
+                          </div>
+                        </div>
+
+                        <div class="col-md- col-lg-2">
+                          <div class="mui-textfield mui-textfield--float-label ">
+                          <input type="text" name="" required>
+                          <label>4.1.3 | 10km deri 50km</label>
+                         </div>
+                       </div>
+
+                       <div class="col-md- col-lg-2">
+                         <div class="mui-textfield mui-textfield--float-label ">
+                         <input type="text" name="" required>
+                         <label>4.1.4 | 51km deri 100km</label>
+                        </div>
+                      </div>
+
+                      <div class="col-md- col-lg-2">
+                        <div class="mui-textfield mui-textfield--float-label ">
+                        <input type="text" name="" required>
+                        <label>4.1.5 | >100km </label>
+                       </div>
+                     </div>
+
+                     <div class="col-md- col-lg-12">
+                       <div class="mui-textfield mui-textfield--float-label ">
+                       <input type="text" name="" required>
+                       <label>  Komente</label>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+               </li>
+               <!---  *********** Lista 6*********  ------->
+               <li>
+                 <div class="collapsible-header"><h4>4.6- 34Mbps deri 140 Mbps </h4></div>
+                 <div class="collapsible-body">
+                 </div>
+               </li>
+               <!---  *********** Lista 7*********  ------->
+               <li>
+                 <div class="collapsible-header">4.7</div>
+                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+               </li>
+               <!---  *********** Lista 8*********  ------->
+               <li>
+                 <div class="collapsible-header">4.8</div>
+                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+               </li>
+               <!---  *********** Lista 9*********  ------->
+               <li>
+                 <div class="collapsible-header">4.9</div>
+                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+               </li>
+               <!---  *********** Lista 10*********  ------->
+               <li>
+                 <div class="collapsible-header">4.10</div>
+                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+               </li>
+               <!---  *********** Lista 11*********  ------->
+               <li>
+                 <div class="collapsible-header">4.11</div>
+                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+               </li>
+
+
+             </ul>
+
+      </div>
 
 <!---***************************** hapi 5 **********************************************-->
 

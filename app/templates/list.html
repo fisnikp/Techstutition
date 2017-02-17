@@ -21,7 +21,7 @@
       <td>{{ rekordi['nderrmarja']['email'] }}</td>
       <td><a class="remove" href="{{ url_for('main.remove', remove_id=rekordi._id)}}">Delete</a>
           |<a href="{{ url_for('main.raporti', report_id=rekordi._id)}}">View</a>  </td>
-  </tr>
+   </tr>
  {% endfor %}
 </table>
 {% endblock %}

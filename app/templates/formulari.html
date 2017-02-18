@@ -60,7 +60,7 @@
       <div class="mdl-tabs__tab-bar ">
         <div class="menu">
             <a href="#step-1" class="mdl-tabs__tab  is-active">
-              <button type="button" class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary indigo darken-4" data-toggle="popover"
+              <button type="button" class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary indigo darken-4 " data-toggle="popover"
               data-placement="top" data-content="Të dhënat për ndërmarrjen">
               1</button></a>
             <a href="#step-2" class="mdl-tabs__tab"><button type="button" class="mui-btn mui-btn--small mui-btn--fab mui-btn--primary indigo darken-4" data-toggle="popover"
@@ -95,6 +95,8 @@
 
       <div class="mdl-tabs__panel is-active responsive-menu" id="step-1">
 
+       <div class="alert alert-info alert1" role="alert"><h3> 1.Të dhënat për ndërmarrjen </h3></div>
+
       <form method="POST">
         <legend><h4>1.Të dhënat për ndërmarrjen</h4></legend>
           <legend>1.1 Emri i ndërmarrjes: </legend>
@@ -126,7 +128,12 @@
             <div class="mui-textfield mui-textfield--float-label">
               <input type="email" name="email" required>
               <label>E-mail Adresa</label>
-              <input type="submit">Submit
+
+            </div>
+            <div class="row">
+             <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
+                 <i class="medium material-icons ">input </i>
+               </button>
             </div>
        </form>
         <div class="alert alert-danger" role="alert">
@@ -236,7 +243,7 @@
 
       <div class="mdl-tabs__panel responsive-menu" id="step-3">
 
-
+        <form method="post">
           <div class="alert alert-info alert1" role="alert"><h3>3. Infrastruktura rrjetit</h3></div>
 
           <div class="row">
@@ -272,7 +279,7 @@
             <legend> <h4>3.3 Segmente terminuese</h4></legend>
 
               <div class="mui-textfield mui-textfield--float-label">
-              <input type="text" name="" required>
+              <input type="text" name="segmente_terminuese" required>
               <label>Segmente terminuese</label>
               </div>
           </div>
@@ -282,7 +289,7 @@
             <legend> <h4>3.4 Trunk Segmente</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label">
-            <input type="text" name="" required>
+            <input type="text" name="trunk_terminuese" required>
             <label>Trunk Segmente</label>
             </div>
           </div>
@@ -292,7 +299,7 @@
             <legend> <h4>3.5 Segment Nderkombetare</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="" required>
+            <input type="text" name="segment_nderkombetare" required>
             <label>Segment Nderkombetare</label>
             </div>
           </div>
@@ -302,7 +309,7 @@
             <legend> <h4>3.6 Të tjera</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="" >
+            <input type="text" name="te_tjera" >
             <label>Të tjera</label>
             </div>
           </div>
@@ -312,7 +319,7 @@
             <legend> <h4>3.7 Përkufizime të tjera</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="" required>
+            <input type="text" name="perkufizime_te_tjera" required>
             <label>Përkufizime të tjera</label>
             </div>
           </div>
@@ -321,7 +328,7 @@
           <div class="col-md- col-lg-4">
             <legend> <h4>3.8 Të tjera 2</h4></legend>
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="" required>
+            <input type="text" name="te_tjera_2" required>
             <label>Të tjera 2</label></td>
             </div>
 
@@ -332,7 +339,7 @@
           <div class="col-md- col-lg-4">
             <legend> <h4>3.9 Përkufizime 2 të tjera</h4></legend>
               <div class="mui-textfield mui-textfield--float-label ">
-                <input type="text" name="" required>
+                <input type="text" name="Perkufizime_2_te_tjera" required>
                 <label>Përkufizime 2 të tjera</label>
               </div>
 
@@ -342,15 +349,19 @@
           <div class="col-md- col-lg-">
             <legend> <h4> Komente</h4></legend>
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="" required>
+            <input type="text" name="Komente" required>
             <label>Komente</label>
            </div>
 
          </div>
 
       </div>
-
-
+      <div class="row">
+       <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
+           <i class="medium material-icons ">input </i>
+         </button>
+      </div>
+ </form>
 
     </div>
 
@@ -997,7 +1008,7 @@
 
 
      <div class="mdl-tabs__panel responsive-menu" id="step-5">
-       <div class="alert alert-info alert1" role="alert"><h3> 4. Shërbime të ofruara me shumicë </h3></div>
+       <div class="alert alert-info alert1" role="alert"><h3> 5. Shërbime të ofruara me shumicë </h3></div>
        <div class=row>
 
          <div class="col-md- col-lg-12">
@@ -1627,7 +1638,7 @@
 <!---***************************** hapi 6 **********************************************-->
 
      <div class="mdl-tabs__panel responsive-menu" id="step-6">
-
+         <div class="alert alert-info alert1" role="alert"><h3> 6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h3></div>
        <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon informacion mbi të ardhurat
          e fituara nga dhënia e linjave me qira tek operatorët tjerë.</div>
        <legend><h4>6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h4></legend>
@@ -1698,6 +1709,7 @@
 
 
      <div class="mdl-tabs__panel responsive-menu" id="step-7">
+       <div class="alert alert-info alert1" role="alert"><h3> 7. Tarifat e shërbimeve me pakicë </h3></div>
        <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
           informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me pakicë.</div>
         <legend><h4>7. Tarifat e shërbimeve me pakicë </h4></legend>
@@ -1866,6 +1878,7 @@
 
 
      <div class="mdl-tabs__panel responsive-menu" id="step-8">
+       <div class="alert alert-info alert1" role="alert"><h3> 8. Tarifat e sherbimeve me shumicë </h3></div>
        <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
           informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me shumicë.</div>
         <legend><h4>8. Tarifat e sherbimeve me shumicë </h4></legend>
@@ -2564,7 +2577,7 @@
 
 
      <div class="mui-textfield mui-textfield--float-label col-md- col-lg-5 ">
-     <h5>_</h5>   
+     <h5>_</h5>
      <input type="text" name="" required>
      <label>Nënshkrimi dhe vula:</label>
      </div>
@@ -2574,7 +2587,7 @@
 
     <div class="row">
      <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">Submit
-         <i class="material-icons right">send</i>
+         <i class="material-icons right">DERGO</i>
        </button>
     </div>
 

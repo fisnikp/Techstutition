@@ -18,17 +18,102 @@ def form():
 	elif request.method == 'POST':
 		db = mongo.db.arkep
 		form_data = request.form.to_dict()
+		print form_data
 		data = {
           "nderrmarja":{
-            "emri": form_data['emri_ndermarrjes'],
+            "emri":form_data['emri_ndermarrjes'],
             "numri_regjistrimi":form_data['nr_regjistrimit'],
             "adresa":form_data['adresa'],
             "personi_kontaktues":form_data['personi_kontaktues'],
             "telefoni":form_data['telefoni'],
-            "email":form_data['email']
-            }
+            "email":form_data['email'],
+
+          },
+		     "infraskrtuktura_rrjetit":{
+	            "deri_ne_dhe_perfshire_64Kb/s":{
+	               "segmente_terminuese":form_data['segmente_terminuese'],
+	               "trunk_segmente":form_data['trunk_segmente'],
+	               "segment_nderkombetare":form_data['segment_nderkombetare'],
+	               "te_tjera":form_data['te_tjera'],
+	               "perkufizime_te_tjera":form_data['perkufizime_te_tjera'],
+	               "te_tjera_2":form_data['te_tjera_2'],
+	               "Perkufizime_2_te_tjera":form_data['"Perkufizime_2_te_tjera'],
+	               "Komente":form_data['"Perkufizime_2_te_tjera']
+	            },
+	            "deri_dhe_perfshire_2Mb/s":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "Deri_ne_dhe_përfshire_34Mb/s":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "140_Mbps":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "STM_1":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "STM_16":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "STM_64":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            },
+	            "STM_tjera":{
+	               "segmente_terminuese":"",
+	               "trunk_segmente":"",
+	               "segment_nderkombetare":"",
+	               "te_tjera":"",
+	               "perkufizime_te_tjera":"",
+	               "te_tjera_2":"",
+	               "Përkufizime_2_te_tjera":"",
+	               "Komente":""
+	            }
+			 }
+
 		}
-		db.insert(data)
+		db.insert(form_data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )
 
 	else:

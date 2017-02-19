@@ -28,10 +28,31 @@ def form():
             "personi_kontaktues":form_data['personi_kontaktues'],
             "telefoni":form_data['telefoni'],
             "email":form_data['email'],
+          },
+		   "linjat_me_qera":{ #hapi-2
+		      "ofruara":{
+		         "kombtare":{
+		            "njesia":form_data['njesia_kombetare'],
+		            "sasia":form_data['sasia_kombetare'],
+					"komente":form_data['komente_kombetare']
+		         }
 
-          }
-
-		}
+		      },
+		      "te_marra":{
+		         "kombtare":{
+		            "njesia":form_data['temarra_njesia_kombetare'],
+		            "sasia":form_data['temarra_sasia_kombetare'],
+					"komente":form_data['temarra_komente_kombetare']
+		         }
+			  }
+	      },
+			 "data_plotesimit_formularit":{
+		  		"tremujori":form_data['tremujori'],
+				"i_vitit":form_data['ivitit'],
+				"peridudhaprej":form_data['periudhaprejj'],
+				"peiudhaderi":form_data['peridudhaderime']
+		     }
+	 }
 		db.insert(data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )
 

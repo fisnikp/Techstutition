@@ -7,21 +7,21 @@
 </div>
 <!--*************************************Data******************************-->
 
-
+<form method="POST">
 <div class="container">
  <div class="row">
-   <div class="col-md-6">
+   <div class="col-md-6 col-lg-6">
     <h3> Tre mujori i:</h3>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-4]*(\.[0-4]+)?" id="sample4">
+    <input class="mdl-textfield__input" type="text" name="tremujori" pattern="-?[0-4]*(\.[0-4]+)?" id="sample4">
     <label class="mdl-textfield__label" for="sample4">Tre mujori...</label>
-    <span class="mdl-textfield__error">Ju Lutem shenoni vetem njeri nga tre mujoret: 1 ose 2 ose 3 ose 4!</span>
+    <span class="mdl-textfield__error">Ju Lutem shenoni vetem njeri nga tre mujoret: 1, 2, 3 ose 4!</span>
     </div>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-6 col-lg-6">
     <h3> I vitit:</h3>
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-    <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+    <input class="mdl-textfield__input" type="text" name="ivitit" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
     <label class="mdl-textfield__label" for="sample4">I vitit...</label>
     <span class="mdl-textfield__error">Shenoni vitin sakt me numra!</span>
     </div>
@@ -30,30 +30,29 @@
 </div>
 
 <div class="container">
-<div class='col-md-6'>
+<div class="row">
+<div class='col-md-6 col-lg-6'>
+  <i class="medium material-icons">date_range
+</i>
   <h5> Periudha prej:</h5>
     <div class="form-group">
-        <div class='input-group date' id='datetimepicker6'>
-            <input type='text' class="form-control" />
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
+        <div class="">
+            <input type="date"  name="periudhaprejj" class="datepicker">
         </div>
     </div>
 </div>
 <div class='col-md-6'>
+  <i class="medium material-icons">date_range
+</i>
   <h5> Deri me:</h5>
     <div class="form-group">
-        <div class='input-group date' id='datetimepicker7'>
-            <input type='text' class="form-control" />
-            <span class="input-group-addon">
-                <span class="glyphicon glyphicon-calendar"></span>
-            </span>
-        </div>
+      <div class="">
+          <input type="date" name="peridudhaderime" class="datepicker">
+      </div>
     </div>
 </div>
 </div>
-
+</div>
 <!--*************************************menu*****************************-->
 
 <div class="container">
@@ -99,7 +98,7 @@
 
        <div class="alert alert-info alert1" role="alert"><h3> 1.Të dhënat për ndërmarrjen </h3></div>
 
-        <form method="POST">
+
 
           <legend>Emri i ndërmarrjes: </legend>
             <div class="mui-textfield">
@@ -172,13 +171,7 @@
              </div>
            </div>
            <div class="panel panel-primary">    </div>
-            <div class="row">
-             <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
-                 <i class="medium material-icons ">input </i>
-               </button>
-            </div>
 
-          </form>
 
 
 
@@ -226,19 +219,19 @@
 
                  <td>
                    <div class="mui-textfield mui-textfield--float-label disabled">
-                    <input type="text" value="LINJA">
+                    <input type="text" name="njesia_kombetare" value="LINJA">
                     <label></label>
                   </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="number" name="" required>
+                     <input type="number" name="sasia_kombetare" required>
                      <label>Sasia</label>
                    </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" name="" required>
+                     <input type="text" name="komente_kombetare" required>
                      <label>Komente</label>
                    </div>
                  </td>
@@ -251,6 +244,7 @@
                <tr>
                  <td></td>
                  <td>
+
                    <div class="mui-select">
                      <select>
                        <option>Kombëtare</option>
@@ -262,25 +256,33 @@
 
                  <td>
                    <div class="mui-textfield mui-textfield--float-label disabled">
-                    <input type="text" value="LINJA">
+                    <input type="text" name="temarra_njesia_kombetare" value="LINJA">
                     <label></label>
                   </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="number" name="" required>
+                     <input type="number" name="temarra_sasia_kombetare" required>
                      <label>Sasia</label>
                    </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" name="" required>
+                     <input type="text" name="temarra_komente_kombetare" required>
                      <label>Komente</label>
                    </div>
                  </td>
 
              </tbody>
            </table>
+
+           <div class="row">
+            <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
+                <i class="medium material-icons ">input </i>
+              </button>
+           </div>
+
+         </form>
 
            <div class="valign-wrapper" >
            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
@@ -2883,7 +2885,7 @@
      <div class="mui-textfield mui-textfield--float-label col-md- col-lg-5 ">
      <h5>_</h5>
      <input type="text" name="" required>
-     <label>Nënshkrimi dhe vula:</label>
+     <label>Emri:</label>
      </div>
    </div>
 
@@ -2938,7 +2940,14 @@
 <!---***************************** </hapat> **********************************************-->
 
 
-
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.datepicker').pickadate({
+   selectMonths: true, // Creates a dropdown to control month
+   selectYears: 15 // Creates a dropdown of 15 years to control year
+ });
+    });
+</script>
 
 
 

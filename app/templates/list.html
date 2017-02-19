@@ -1,20 +1,25 @@
 {% extends 'index.html'%}
 {% block forma%}
 <script type="text/javascript">
-  $(document).ready(function(){
-    $('.remove').click(function(event){
-      event.preventDefault();
-      var url = this.href;
-      $.post(url);
+    $(document).ready(function(){
+        $('.remove').click(function(event){
+            event.preventDefault();
+            var url = this.href;
+            var id = this.id;
+            $.post(url, function(data){
+                if(data.removed == true){
+                    $('#'+id).parent().parent().remove();
+                }
 
-      $(".remove").live('click', function(event) {
-    $(this).parent().remove();
-});
+            }).fail(function(){
+                alert("Something wrong happened");
+            });;
+        });
     });
-
-  });
 </script>
-<div class="container">
+
+
+<div class="container z-depth-5">
 <table class="table">
       <tr>
         <th>Emri</th>
@@ -22,13 +27,17 @@
         <th>Actions</th>
       </tr>
   {% for rekordi in rekordet %}
-    <tr>
-      <td >{{ rekordi['nderrmarja']['emri'] }}</td>
-      <td>{{ rekordi['nderrmarja']['email'] }}</td>
-      <td><a class="remove" href="{{ url_for('main.remove', remove_id=rekordi._id)}}">Delete</a>
-          |<a href="{{ url_for('main.raporti', report_id=rekordi._id)}}">View</a>  </td>
-   </tr>
+  <tr class="hoverable">
+    <td >{{ rekordi['nderrmarja']['emri'] }}</td>
+    <td>{{ rekordi['nderrmarja']['email'] }}</td>
+  <td>
+    <a class="remove" id="{{ rekordi._id }}" href="{{ url_for('main.remove' , remove_id=rekordi._id)}}" > Delete</a> |
+    <a href="{{ url_for('main.raporti' , report_id=rekordi._id)}}">View</a>
+  </td>
+</tr>
  {% endfor %}
 </table>
 </div>
+
+  <div class="panel panel-primary">    </div>
 {% endblock %}

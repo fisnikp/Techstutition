@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for, Response
 from app import mongo
 from bson import ObjectId
+from bson.json_util import dumps
 
 mod_main = Blueprint('main', __name__)
 
@@ -28,92 +29,10 @@ def form():
             "telefoni":form_data['telefoni'],
             "email":form_data['email'],
 
-          },
-		     "infraskrtuktura_rrjetit":{
-	            "deri_ne_dhe_perfshire_64Kb/s":{
-	               "segmente_terminuese":form_data['segmente_terminuese'],
-	               "trunk_segmente":form_data['trunk_segmente'],
-	               "segment_nderkombetare":form_data['segment_nderkombetare'],
-	               "te_tjera":form_data['te_tjera'],
-	               "perkufizime_te_tjera":form_data['perkufizime_te_tjera'],
-	               "te_tjera_2":form_data['te_tjera_2'],
-	               "Perkufizime_2_te_tjera":form_data['"Perkufizime_2_te_tjera'],
-	               "Komente":form_data['"Perkufizime_2_te_tjera']
-	            },
-	            "deri_dhe_perfshire_2Mb/s":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "Deri_ne_dhe_përfshire_34Mb/s":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "140_Mbps":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "STM_1":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "STM_16":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "STM_64":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            },
-	            "STM_tjera":{
-	               "segmente_terminuese":"",
-	               "trunk_segmente":"",
-	               "segment_nderkombetare":"",
-	               "te_tjera":"",
-	               "perkufizime_te_tjera":"",
-	               "te_tjera_2":"",
-	               "Përkufizime_2_te_tjera":"",
-	               "Komente":""
-	            }
-			 }
+          }
 
 		}
-		db.insert(form_data)
+		db.insert(data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )
 
 	else:
@@ -126,11 +45,18 @@ def list():
 	return 	render_template('list.html', rekordet=rekordet)
 
 
-@mod_main.route('/remove/<string:remove_id>', methods=["POST"])
+@mod_main.route('/remove/<string:remove_id>', methods=['POST'])
 def remove(remove_id):
-	db = mongo.db.arkep
-	remove = db.remove({"_id": ObjectId(remove_id)})
-	return Response(200)
+    db = mongo.db.arkep
+    remove = db.remove({"_id" : ObjectId(remove_id)})
+    if remove['n'] == 1:
+        return Response(response=dumps({"removed": True}),
+        status=200,
+        mimetype='application/json')
+    else:
+        return Response(response=dumps({"removed": False}),
+        status=500,
+        mimetype='application/json')
 
 @mod_main.route('/raporti/<string:report_id>')
 def raporti(report_id):

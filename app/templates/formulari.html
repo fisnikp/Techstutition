@@ -6,6 +6,8 @@
   <div class="alert alert-info alert1" role="alert">PYETËSORI PËR OFRUESIT E SHËRBIMEVE TË LINJAVE ME QIRA</div>
 </div>
 <!--*************************************Data******************************-->
+
+
 <div class="container">
  <div class="row">
    <div class="col-md-6">
@@ -97,45 +99,48 @@
 
        <div class="alert alert-info alert1" role="alert"><h3> 1.Të dhënat për ndërmarrjen </h3></div>
 
-      <form method="POST">
-        <legend><h4>1.Të dhënat për ndërmarrjen</h4></legend>
-          <legend>1.1 Emri i ndërmarrjes: </legend>
+        <form method="POST">
+
+          <legend>Emri i ndërmarrjes: </legend>
             <div class="mui-textfield">
               <input type="text" name="emri_ndermarrjes" required>
               <label>Emri i ndërmarrjes..</label>
             </div>
-        <legend>1.2 Numri i regjistrimit të biznesit: </legend>
+        <legend>Numri i regjistrimit të biznesit: </legend>
             <div class="mui-textfield mui-textfield--float-label">
               <input type="number" name="nr_regjistrimit" required>
               <label>Numri i regjistrimit të biznesit..</label>
             </div>
-        <legend>1.3 Adresa e ndërmarrjes: </legend>
+        <legend> Adresa e ndërmarrjes: </legend>
             <div class="mui-textfield mui-textfield--float-label">
               <input type="text" name="adresa" required>
               <label>Adresa e ndërmarrjes..</label>
             </div>
-        <legend>1.4 Personi kontaktues: </legend>
+        <legend> Personi kontaktues: </legend>
             <div class="mui-textfield mui-textfield--float-label">
               <input type="text" name="personi_kontaktues" required>
               <label>Personi kontaktues..</label>
             </div>
-        <legend>1.5 Telefoni: </legend>
+        <legend>Telefoni: </legend>
             <div class="mui-textfield mui-textfield--float-label">
               <input type="number" name="telefoni" required>
               <label>Telefoni..</label>
             </div>
-          <legend>1.6 E-mail Adresa: </legend>
+        <legend> E-mail Adresa: </legend>
             <div class="mui-textfield mui-textfield--float-label">
               <input type="email" name="email" required>
               <label>E-mail Adresa</label>
 
             </div>
+
             <div class="row">
              <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
                  <i class="medium material-icons ">input </i>
                </button>
             </div>
-       </form>
+
+          </form>
+
         <div class="alert alert-danger" role="alert">
           SHËNIM: Për përkufizimin e elementeve të infrastruktures ju lutemi klikoni tek <a href"#">SKEMA</a>
         </div>
@@ -159,7 +164,7 @@
                  </div>
                </tr>
                <tr>
-                 <th data-field="id" class="col s3 m3 l3">2.0</th>
+                 <th data-field="id" class="col s3 m3 l3"></th>
                  <th data-field="id" class="col s3 m3 l3">Numri total i linjave me qira të ofruara nga rrjetet tjera:</th>
                </tr>
 
@@ -167,12 +172,12 @@
 
              <tbody>
                <tr>
-                 <td>2.1</td>
+                 <td></td>
                  <td>
                    <div class="mui-select">
                      <select>
-                       <option>2.1.1 Kombëtare</option>
-                       <option>2.1.2 Ndërkombëtare</option>
+                       <option> Kombëtare</option>
+                       <option> Ndërkombëtare</option>
                      </select>
                      <label>Numri total i linjave me qira të ofruara për rrjetet tjera:</label>
                    </div>
@@ -199,16 +204,16 @@
 
                </tr>
                <tr>
-                 <th data-field="id" class="col s3 m3 l3">2.2</th>
+                 <th data-field="id" class="col s3 m3 l3"></th>
                  <th data-field="id" class="col s3 m3 l3">Numri total i linjave me qira të marra nga rrjetet tjera:</th>
                </tr>
                <tr>
-                 <td>2.2</td>
+                 <td></td>
                  <td>
                    <div class="mui-select">
                      <select>
-                       <option>2.2.1 Kombëtare</option>
-                       <option>2.2.2 Ndërkombëtare</option>
+                       <option>Kombëtare</option>
+                       <option>Ndërkombëtare</option>
                      </select>
                      <label>Numri total i linjave me qira të marra për rrjetet tjera:</label>
                    </div>
@@ -243,31 +248,31 @@
 
       <div class="mdl-tabs__panel responsive-menu" id="step-3">
 
-        <form method="post">
+
           <div class="alert alert-info alert1" role="alert"><h3>3. Infrastruktura rrjetit</h3></div>
 
           <div class="row">
             <!-- kolona1-->
-            <div class="col-md- col-lg-5">
-            <legend> <h4>3.1 Kapaciteti total i furnizimit të linjave me qira ne rrjet: </h4></legend>
+            <div class="col-md- col-lg-12">
+            <legend> <h4> Kapaciteti total i furnizimit të linjave me qira ne rrjet: </h4></legend>
 
               <div class="mui-select">
               <select>
-                <option>3.1.1 |Deri në dhe përfshirë 64 Kb/s</option>
-                <option>3.1.2 |Deri dhe përfshirë 2Mb/s</option>
-                <option>3.1.3 |Deri  në dhe përfshirë 34Mb/s</option>
-                <option>3.1.4 |140 Mbps </option>
-                <option>3.1.5 |STM 1</option>
-                <option>3.1.6 |STM 16</option>
-                <option>3.1.7 |STM 64</option>
-                <option>3.1.8 |Të tjera</option>
+                <option>Deri në dhe përfshirë 64 Kb/s</option>
+                <option>Deri dhe përfshirë 2Mb/s</option>
+                <option>Deri  në dhe përfshirë 34Mb/s</option>
+                <option>140 Mbps </option>
+                <option>STM 1</option>
+                <option>STM 16</option>
+                <option>STM 64</option>
+                <option>Të tjera</option>
               </select>
               <label>Kapaciteti total i furnizimit të linjave me qira ne rrjet</label>
             </div>
           </div>
           <!-- kolona2-->
-          <div class="col-md- col-lg-3">
-          <legend> <h4>3.2 Njësi</h4></legend>
+          <div class="col-md- col-lg-12">
+          <legend> <h4>Njësi</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label disabled">
              <input type="text" value="Njësi">
@@ -275,8 +280,8 @@
              </div>
           </div>
           <!-- kolona3-->
-          <div class="col-md- col-lg-3">
-            <legend> <h4>3.3 Segmente terminuese</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Segmente terminuese</h4></legend>
 
               <div class="mui-textfield mui-textfield--float-label">
               <input type="text" name="segmente_terminuese" required>
@@ -285,8 +290,8 @@
           </div>
 
           <!-- kolona4-->
-          <div class="col-md- col-lg-4">
-            <legend> <h4>3.4 Trunk Segmente</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Trunk Segmente</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label">
             <input type="text" name="trunk_terminuese" required>
@@ -295,8 +300,8 @@
           </div>
 
           <!-- kolona5-->
-          <div class="col-md- col-lg-4">
-            <legend> <h4>3.5 Segment Nderkombetare</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Segment Nderkombetare</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
             <input type="text" name="segment_nderkombetare" required>
@@ -305,8 +310,8 @@
           </div>
 
           <!-- kolona6-->
-          <div class="col-md- col-lg-4">
-            <legend> <h4>3.6 Të tjera</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Të tjera</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
             <input type="text" name="te_tjera" >
@@ -315,8 +320,8 @@
           </div>
 
           <!-- kolona7-->
-          <div class="col-md- col-lg-4">
-            <legend> <h4>3.7 Përkufizime të tjera</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Përkufizime të tjera</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label ">
             <input type="text" name="perkufizime_te_tjera" required>
@@ -325,8 +330,8 @@
           </div>
 
              <!-- kolona8-->
-          <div class="col-md- col-lg-4">
-            <legend> <h4>3.8 Të tjera 2</h4></legend>
+          <div class="col-md- col-lg-12">
+            <legend> <h4>Të tjera 2</h4></legend>
             <div class="mui-textfield mui-textfield--float-label ">
             <input type="text" name="te_tjera_2" required>
             <label>Të tjera 2</label></td>
@@ -336,7 +341,7 @@
 
 
           <!-- kolona9-->
-          <div class="col-md- col-lg-4">
+          <div class="col-md- col-lg-12">
             <legend> <h4>3.9 Përkufizime 2 të tjera</h4></legend>
               <div class="mui-textfield mui-textfield--float-label ">
                 <input type="text" name="Perkufizime_2_te_tjera" required>
@@ -346,7 +351,7 @@
           </div>
 
           <!-- kolona10-->
-          <div class="col-md- col-lg-">
+          <div class="col-md- col-lg-12">
             <legend> <h4> Komente</h4></legend>
             <div class="mui-textfield mui-textfield--float-label ">
             <input type="text" name="Komente" required>
@@ -356,12 +361,7 @@
          </div>
 
       </div>
-      <div class="row">
-       <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
-           <i class="medium material-icons ">input </i>
-         </button>
-      </div>
- </form>
+
 
     </div>
 
@@ -380,10 +380,10 @@
              <div class=row>
 
                <div class="col-md- col-lg-12">
-                 <legend> <h4>4. Llojet e linjave me qira</h4></legend>
+                 <legend class="center-align"> <h4>Llojet e linjave me qira</h4></legend>
                </div>
                <div class="col-md- col-lg-12">
-                 <legend> <h4>Numri total i linjave me qira të shpërndara tek përdoruesit fundor me pakicë</h4></legend>
+                 <legend  class="center-align"> <h4>Numri total i linjave me qira të shpërndara tek përdoruesit fundor me pakicë</h4></legend>
                </div>
 
                <div class="col-md- col-lg-12">
@@ -394,7 +394,7 @@
              </div>
              <ul class="collapsible" data-collapsible="accordion">
                <li>
-                 <div class="collapsible-header"><h4>4.1 Linja analoge me qira</h4></div>
+                 <div class="collapsible-header active"><h4>Linja analoge me qira</h4></div>
                  <div class="collapsible-body">
 
                     <div class="row">
@@ -406,35 +406,35 @@
                           <div class="col-md- col-lg-1">
                             <div class="mui-textfield mui-textfield--float-label disabled">
                              <input type="text" value="Njësi">
-                             <label>4.1.1 Njësi</label>
+                             <label>Njësi</label>
                              </div>
                           </div>
 
                           <div class="col-md- col-lg-2">
                             <div class="mui-textfield mui-textfield--float-label ">
                             <input type="text" name="" required>
-                            <label>4.1.2 | Me te vegjla se 10 km</label>
+                            <label>Me te vegjla se 10 km</label>
                            </div>
                          </div>
 
                          <div class="col-md- col-lg-2">
                            <div class="mui-textfield mui-textfield--float-label ">
                            <input type="text" name="" required>
-                           <label>4.1.3 | 10km deri 50km</label>
+                           <label>10km deri 50km</label>
                           </div>
                         </div>
 
                         <div class="col-md- col-lg-2">
                           <div class="mui-textfield mui-textfield--float-label ">
                           <input type="text" name="" required>
-                          <label>4.1.4 | 51km deri 100km</label>
+                          <label>51km deri 100km</label>
                          </div>
                        </div>
 
                        <div class="col-md- col-lg-2">
                          <div class="mui-textfield mui-textfield--float-label ">
                          <input type="text" name="" required>
-                         <label>4.1.5 | >100km </label>
+                         <label>  >100km </label>
                         </div>
                       </div>
 
@@ -453,7 +453,7 @@
                </li>
                 <!---  *********** Lista 2*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.2 Linja digjitale </h4></div>
+                 <div class="collapsible-header"><h4>Linja digjitale </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
@@ -510,11 +510,11 @@
                </li>
                <!---  *********** Lista 3*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.3 Deri ne 64 kbps</h4></div>
+                 <div class="collapsible-header"><h4>Deri ne 64 kbps</h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.3 Deri ne 64 kbps </h4>
+                       <h4>Deri ne 64 kbps </h4>
 
                          </div>
 
@@ -565,11 +565,11 @@
                </li>
                <!---  *********** Lista 4*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.4- 64 kbps deri ne 2Mbps</h4></div>
+                 <div class="collapsible-header"><h4>64 kbps deri ne 2Mbps</h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.4- 64 kbps deri ne 2Mbps </h4>
+                       <h4> 64 kbps deri ne 2Mbps </h4>
 
                          </div>
 
@@ -604,7 +604,7 @@
                       <div class="col-md- col-lg-2">
                         <div class="mui-textfield mui-textfield--float-label ">
                         <input type="text" name="" required>
-                        <label>>100km </label>
+                        <label> >100km </label>
                        </div>
                      </div>
 
@@ -621,11 +621,11 @@
                </li>
                <!---  *********** Lista 5*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.5- 2Mbit/s deri ne 34Mbps </h4></div>
+                 <div class="collapsible-header"><h4>2Mbit/s deri ne 34Mbps </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.5- 2Mbit/s deri ne 34Mbps </h4>
+                       <h4>2Mbit/s deri ne 34Mbps </h4>
 
                          </div>
 
@@ -675,11 +675,11 @@
                </li>
                <!---  *********** Lista 6*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.6- 34Mbps deri 140 Mbps </h4></div>
+                 <div class="collapsible-header"><h4>34Mbps deri 140 Mbps </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.6- 34Mbps deri 140 Mbps </h4>
+                       <h4>34Mbps deri 140 Mbps </h4>
 
                          </div>
 
@@ -783,11 +783,11 @@
                </li>
                <!---  *********** Lista 8*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>4.8 STM 1 </h4></div>
+                 <div class="collapsible-header"><h4>STM 1 </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.8 STM 1  </h4>
+                       <h4>STM 1  </h4>
 
                          </div>
 
@@ -837,11 +837,11 @@
                </li>
                <!---  *********** Lista 9*********  ------->
                <li>
-                 <div class="collapsible-header"><h4> 4.9 STM 16 </h4></div>
+                 <div class="collapsible-header"><h4> STM 16 </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.9 STM 16 </h4>
+                       <h4>STM 16 </h4>
 
                          </div>
 
@@ -891,11 +891,11 @@
                </li>
                <!---  *********** Lista 10*********  ------->
                <li>
-                 <div class="collapsible-header"><h4>  4.10 STM 64 </h4></div>
+                 <div class="collapsible-header"><h4>  STM 64 </h4></div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.10 STM 64 </h4>
+                       <h4>STM 64 </h4>
 
                          </div>
 
@@ -945,12 +945,12 @@
                </li>
                <!---  *********** Lista 11*********  ------->
                <li>
-                 <div class="collapsible-header"><h4> 4.11 [Përcakto këtu linja të tjera me qira të ofruara]</h4>
+                 <div class="collapsible-header"><h4> [Përcakto këtu linja të tjera me qira të ofruara]</h4>
                  </div>
                  <div class="collapsible-body">
                    <div class="row">
                      <div class="col-md- col-lg-2">
-                       <h4>4.11- [Përcakto këtu linja të tjera me qira të ofruara]  </h4>
+                       <h4>[Përcakto këtu linja të tjera me qira të ofruara]  </h4>
 
                          </div>
 
@@ -1012,10 +1012,10 @@
        <div class=row>
 
          <div class="col-md- col-lg-12">
-           <legend> <h4>4. Llojet e linjave me qira</h4></legend>
+           <legend class="center-align"> <h4>Llojet e linjave me qira</h4></legend>
          </div>
          <div class="col-md- col-lg-12">
-           <legend> <h4>Numri total i linjave me qira të shpërndara tek përdoruesit fundor me shumicsë</h4></legend>
+           <legend class="center-align"> <h4>Numri total i linjave me qira të shpërndara tek përdoruesit fundor me shumicsë</h4></legend>
          </div>
 
          <div class="col-md- col-lg-12">
@@ -1025,16 +1025,16 @@
 
        <ul class="collapsible" data-collapsible="accordion">
          <li>
-           <div class="collapsible-header"><h4>5.1 Linja analoge me qira</h4></div>
+           <div class="collapsible-header active"><h4>Linja analoge me qira</h4></div>
            <div class="collapsible-body">
 
               <div class="row">
                 <div class="col-md- col-lg-2">
-                  <h4>Linja analoge me qira</h4>
+                  <!-- <h4>Linja analoge me qira</h4> -->
 
                     </div>
 
-                    <div class="col-md- col-lg-1">
+                    <div class="col-md- col-lg-2">
                       <div class="mui-textfield mui-textfield--float-label disabled">
                        <input type="text" value="Njësi">
                        <label> Njësi</label>
@@ -1084,15 +1084,15 @@
          </li>
           <!---  *********** Lista 2*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.2 Linja digjitale </h4></div>
+           <div class="collapsible-header"><h4>Linja digjitale </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>Linja digjitale </h4>
+                 <!-- <h4>Linja digjitale </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1141,15 +1141,15 @@
          </li>
          <!---  *********** Lista 3*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.3 Deri ne 64 kbps</h4></div>
+           <div class="collapsible-header"><h4>Deri ne 64 kbps</h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.3 Deri ne 64 kbps </h4>
+                 <h4>Deri ne 64 kbps </h4>
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1196,15 +1196,15 @@
          </li>
          <!---  *********** Lista 4*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.4- 64 kbps deri ne 2Mbps</h4></div>
+           <div class="collapsible-header"><h4> 64 kbps deri ne 2Mbps</h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.4- 64 kbps deri ne 2Mbps </h4>
+                 <!-- <h4>5.4- 64 kbps deri ne 2Mbps </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1252,15 +1252,15 @@
          </li>
          <!---  *********** Lista 5*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.5- 2Mbit/s deri ne 34Mbps </h4></div>
+           <div class="collapsible-header"><h4> 2Mbit/s deri ne 34Mbps </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.5- 2Mbit/s deri ne 34Mbps </h4>
+                 <!-- <h4>5.5- 2Mbit/s deri ne 34Mbps </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1306,15 +1306,15 @@
          </li>
          <!---  *********** Lista 6*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.6- 34Mbps deri 140 Mbps </h4></div>
+           <div class="collapsible-header"><h4>34Mbps deri 140 Mbps </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.6- 34Mbps deri 140 Mbps </h4>
+                 <!-- <h4>5.6- 34Mbps deri 140 Mbps </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1360,15 +1360,15 @@
          </li>
          <!---  *********** Lista 7*********  ------->
          <li>
-           <div class="collapsible-header"><h4> 5.7- 140 Mbps </h4> </div>
+           <div class="collapsible-header"><h4> 140 Mbps </h4> </div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.7- 140 Mbps  </h4>
+                 <!-- <h4>5.7- 140 Mbps  </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1414,15 +1414,15 @@
          </li>
          <!---  *********** Lista 8*********  ------->
          <li>
-           <div class="collapsible-header"><h4>5.8 STM 1 </h4></div>
+           <div class="collapsible-header"><h4>STM 1 </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.8 STM 1  </h4>
+                 <!-- <h4>5.8 STM 1  </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label> Njësi</label>
@@ -1468,15 +1468,15 @@
          </li>
          <!---  *********** Lista 9*********  ------->
          <li>
-           <div class="collapsible-header"><h4> 5.9 STM 16 </h4></div>
+           <div class="collapsible-header"><h4> STM 16 </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.9 STM 16 </h4>
+                 <!-- <h4>5.9 STM 16 </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label>Njësi</label>
@@ -1522,15 +1522,15 @@
          </li>
          <!---  *********** Lista 10*********  ------->
          <li>
-           <div class="collapsible-header"><h4>  5.10 STM 64 </h4></div>
+           <div class="collapsible-header"><h4> STM 64 </h4></div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.10 STM 64 </h4>
+                 <!-- <h4>5.10 STM 64 </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label> Njësi</label>
@@ -1576,16 +1576,16 @@
          </li>
          <!---  *********** Lista 11*********  ------->
          <li>
-           <div class="collapsible-header"><h4> 5.11 [Përcakto këtu linja të tjera me qira të ofruara]</h4>
+           <div class="collapsible-header"><h4> [Përcakto këtu linja të tjera me qira të ofruara]</h4>
            </div>
            <div class="collapsible-body">
              <div class="row">
                <div class="col-md- col-lg-2">
-                 <h4>5.11- [Përcakto këtu linja të tjera me qira të ofruara]  </h4>
+                 <!-- <h4>5.11- [Përcakto këtu linja të tjera me qira të ofruara]  </h4> -->
 
                    </div>
 
-                   <div class="col-md- col-lg-1">
+                   <div class="col-md- col-lg-2">
                      <div class="mui-textfield mui-textfield--float-label disabled">
                       <input type="text" value="Njësi">
                       <label> Njësi</label>
@@ -1639,15 +1639,15 @@
 
      <div class="mdl-tabs__panel responsive-menu" id="step-6">
          <div class="alert alert-info alert1" role="alert"><h3> 6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h3></div>
-       <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon informacion mbi të ardhurat
+       <div class="alert alert-success danger" role="alert">SHËNIM: Ky seksion kërkon informacion mbi të ardhurat
          e fituara nga dhënia e linjave me qira tek operatorët tjerë.</div>
-       <legend><h4>6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h4></legend>
+       <!-- <legend><h4>6.Të ardhurat nga ofrimi I shërbimeve  të linjave me qira </h4></legend> -->
          <legend>Të ardhurat</legend>
 
       <legend>
          <div class="row">
               <div class="col-md-4">
-              <h4>6.1 Të ardhurat nga shërbimet me pakicë:</h4>
+              <h4>Të ardhurat nga shërbimet me pakicë:</h4>
             </div>
              <div class="col-md-4">
              <div class="mui-textfield">
@@ -1666,7 +1666,7 @@
       <legend>
          <div class="row">
               <div class="col-md-4">
-              <h4>6.2 Të ardhurat nga shërbimet me shumicë:</h4>
+              <h4>Të ardhurat nga shërbimet me shumicë:</h4>
             </div>
              <div class="col-md-4">
              <div class="mui-textfield">
@@ -1685,7 +1685,7 @@
       <legend>
          <div class="row">
               <div class="col-md-4">
-              <h4>6.3 Të ardhurat totale:</h4>
+              <h4> Të ardhurat totale:</h4>
             </div>
              <div class="col-md-4">
              <div class="mui-textfield">
@@ -1712,14 +1712,14 @@
        <div class="alert alert-info alert1" role="alert"><h3> 7. Tarifat e shërbimeve me pakicë </h3></div>
        <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
           informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me pakicë.</div>
-        <legend><h4>7. Tarifat e shërbimeve me pakicë </h4></legend>
+        <!-- <legend><h4>7. Tarifat e shërbimeve me pakicë </h4></legend> -->
          <legend>Tipet e linjave me qira
            [Listoni kategoritë nga tabela e tarifave]</legend>
 
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.1 2 Mbps deri në 2 km:</h4>
+                  <h4>Mbps deri në 2 km:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1738,7 +1738,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.2 34 Mbps deri në 2 km:</h4>
+                  <h4>34 Mbps deri në 2 km:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1757,7 +1757,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.3 2 Mbps deri në deri 50:</h4>
+                  <h4>2 Mbps deri në deri 50:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1776,7 +1776,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.4 34Mbps deri në deri 50:</h4>
+                  <h4> 34Mbps deri në deri 50:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1795,7 +1795,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.5 2Mbps deri në kufi:</h4>
+                  <h4> 2Mbps deri në kufi:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1814,7 +1814,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.6 34Mbps deri në kufi:</h4>
+                  <h4> 34Mbps deri në kufi:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1833,7 +1833,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.7 2Mbps deri në UK (Londër):</h4>
+                  <h4> 2Mbps deri në UK (Londër):</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1852,7 +1852,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>7.8 34 Mbps deri në UK (Londër):</h4>
+                  <h4> 34 Mbps deri në UK (Londër):</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1881,14 +1881,14 @@
        <div class="alert alert-info alert1" role="alert"><h3> 8. Tarifat e sherbimeve me shumicë </h3></div>
        <div class="alert alert-success" role="alert">SHËNIM: Ky seksion kërkon
           informacion mbi tarifat e dhënies se linjave me qira tek klientet fundor me shumicë.</div>
-        <legend><h4>8. Tarifat e sherbimeve me shumicë </h4></legend>
+        <!-- <legend><h4>8. Tarifat e sherbimeve me shumicë </h4></legend> -->
          <legend>Tipet e linjave me qira
            [Listoni kategoritë nga tabela e tarifave]</legend>
 
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.1 2 Mbps deri në 2 km:</h4>
+                  <h4> Mbps deri në 2 km:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1907,7 +1907,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.2 34 Mbps deri në 2 km:</h4>
+                  <h4> 34 Mbps deri në 2 km:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1926,7 +1926,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.3 2 Mbps deri në deri 50:</h4>
+                  <h4> 2 Mbps deri në deri 50:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1945,7 +1945,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.4 34Mbps deri në deri 50:</h4>
+                  <h4> 34Mbps deri në deri 50:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1964,7 +1964,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.5 2Mbps deri në kufi:</h4>
+                  <h4> 2Mbps deri në kufi:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -1983,7 +1983,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.6 34Mbps deri në kufi:</h4>
+                  <h4> 34Mbps deri në kufi:</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -2002,7 +2002,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.7 2Mbps deri në UK (Londër):</h4>
+                  <h4> 2Mbps deri në UK (Londër):</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -2021,7 +2021,7 @@
           <legend>
              <div class="row">
                   <div class="col-md-4">
-                  <h4>8.8 34 Mbps deri në UK (Londër):</h4>
+                  <h4> 34 Mbps deri në UK (Londër):</h4>
                 </div>
                  <div class="col-md-4">
                  <div class="mui-textfield">
@@ -2050,8 +2050,8 @@
        <div class=row>
 
          <div class="col-md- col-lg-12">
-           <legend> <h4>9. Detaje të linjave me qera të
-             cilat ju përdorni dhe merren nga operatorët e tjere</h4></legend>
+           <!-- <legend> <h4>9. Detaje të linjave me qera të
+             cilat ju përdorni dhe merren nga operatorët e tjere</h4></legend> -->
          </div>
 
 
@@ -2065,7 +2065,7 @@
 
       <!--- Lista 1 e hapit 9 -->
     <li>
-      <div class="collapsible-header"><h4>9.1</h4></div>
+      <div class="collapsible-header active"><h4>9.1</h4></div>
       <div class="collapsible-body">
           <div class="row">
             <div class="col-md- col-lg-2">
@@ -2585,11 +2585,12 @@
 
  </div>
 
-    <div class="row">
-     <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">Submit
-         <i class="material-icons right">DERGO</i>
-       </button>
-    </div>
+ <div class="row">
+  <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
+      <i class="medium material-icons ">input </i>
+    </button>
+ </div>
+
 
  </div>
 

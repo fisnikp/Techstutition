@@ -7,7 +7,7 @@
 </div>
 <!--*************************************Data******************************-->
 
-<form method="POST">
+
 <div class="container">
  <div class="row">
    <div class="col-md-6 col-lg-6">
@@ -99,7 +99,7 @@
        <div class="alert alert-info alert1" role="alert"><h3> 1.Të dhënat për ndërmarrjen </h3></div>
 
 
-
+  <form method="POST">
           <legend>Emri i ndërmarrjes: </legend>
             <div class="mui-textfield">
               <input type="text" name="emri_ndermarrjes" required>
@@ -276,13 +276,7 @@
              </tbody>
            </table>
 
-           <div class="row">
-            <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
-                <i class="medium material-icons ">input </i>
-              </button>
-           </div>
 
-         </form>
 
            <div class="valign-wrapper" >
            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
@@ -340,14 +334,14 @@
 
               <div class="mui-select">
               <select>
-                <option>Deri në dhe përfshirë 64 Kb/s</option>
-                <option>Deri dhe përfshirë 2Mb/s</option>
-                <option>Deri  në dhe përfshirë 34Mb/s</option>
-                <option>140 Mbps </option>
-                <option>STM 1</option>
-                <option>STM 16</option>
-                <option>STM 64</option>
-                <option>Të tjera</option>
+                <option value="deri_ne_dhe_perfshire_64Kb/s">Deri në dhe përfshirë 64 Kb/s</option>
+                <option  value="deri_dhe_perfshire_2Mb/s">Deri dhe përfshirë 2Mb/s</option>
+                <option value="deri_ne_dhe_perfshire_34Mb/s">Deri  në dhe përfshirë 34Mb/s</option>
+                <option value="140_Mbps">140 Mbps </option>
+                <option value="STM_1">STM 1</option>
+                <option value="STM_16">STM 16</option>
+                <option value="STM_64">STM 64</option>
+                <option value="STM_tjera">Të tjera</option>
               </select>
               <label>Kapaciteti total i furnizimit të linjave me qira ne rrjet</label>
             </div>
@@ -376,7 +370,7 @@
             <legend> <h4>Trunk Segmente</h4></legend>
 
             <div class="mui-textfield mui-textfield--float-label">
-            <input type="text" name="trunk_terminuese" required>
+            <input type="text" name="trunk_segmente" required/>
             <label>Trunk Segmente</label>
             </div>
           </div>
@@ -425,7 +419,7 @@
           <!-- kolona9-->
           <div class="col-md- col-lg-12">
             <legend> <h4>3.9 Përkufizime 2 të tjera</h4></legend>
-              <div class="mui-textfield mui-textfield--float-label ">
+              <div class="mui-textfield mui-textfield--float-label">
                 <input type="text" name="Perkufizime_2_te_tjera" required>
                 <label>Përkufizime 2 të tjera</label>
               </div>
@@ -436,11 +430,19 @@
           <div class="col-md- col-lg-12">
             <legend> <h4> Komente</h4></legend>
             <div class="mui-textfield mui-textfield--float-label ">
-            <input type="text" name="Komente" required>
+            <input type="text" name="komentet">
             <label>Komente</label>
            </div>
 
          </div>
+
+         <div class="row">
+          <button class="btn waves-effect indigo darken-4 btn-large col s6 offset-s6" type="submit" name="action">DERGO
+              <i class="medium material-icons ">input </i>
+            </button>
+         </div>
+
+       </form>
 
       </div>
       <div class="valign-wrapper" >

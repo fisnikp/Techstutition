@@ -2,30 +2,75 @@
   {% extends 'index.html'%}
   {% block forma%}
 
-    <div class="container ">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-3  hoverable">
+            <div class="col-md-4 col-md-offset-4  ">
                 <br /><br /><br />
                 <dl class="dl-horizontal">
+          <!--****************************HAPI 1**************************************** -->
+                  <div class="panel panel-primary">    </div>
                   <dt>Emri:</dt>
                   <dd>{{ report['nderrmarja']['emri'] }}</dd>
-                  <dt>Personi kontaktues:</dt>
-                  <dd>{{ report['nderrmarja']['personi_kontaktues'] }}</dd>
+                  <dt >Personi kontaktues:</dt>
+                  <dd >{{ report['nderrmarja']['personi_kontaktues'] }}</dd>
                   <dt>Numri Regjistrimi:</dt>
                   <dd>{{ report['nderrmarja']['numri_regjistrimi'] }}</dd>
-
                   <dt>Adresa:</dt>
                   <dd>{{ report['nderrmarja']['adresa'] }}</dd>
                   <dt>Telefoni:</dt>
                   <dd>{{ report['nderrmarja']['telefoni'] }}</dd>
                   <dt>Email: </dt>
                   <dd>{{ report['nderrmarja']['email'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+            <!--****************************HAPI 2**************************************** -->
+                  <dt>Numri total i linjave<br> me qira të ofruara<br> nga rrjetet tjera:</dt>
+                  <dd>{{ report['linjat_me_qera']['ofruara']["kombtare/nderkombtare"] }}</dd>
                   <dt>Njesia: </dt>
-                  <dd>{{ report['linjat_me_qera']['ofruara']['kombtare']['njesia'] }}</dd>
+                  <dd>{{ report['linjat_me_qera']['ofruara']["njesiaofruara"] }}</dd>
                   <dt>Sasia: </dt>
-                  <dd>{{ report['linjat_me_qera']['ofruara']['kombtare']['sasia'] }}</dd>
+                  <dd>{{ report['linjat_me_qera']['ofruara']['sasiaofruara'] }}</dd>
                   <dt>Komente: </dt>
-                  <dd>{{ report['linjat_me_qera']['ofruara']['kombtare']['komente'] }}</dd>
+                  <dd>{{ report['linjat_me_qera']['ofruara']['komenteofruara'] }}</dd>
+                  <br>
+
+                  <!--*****************HAPI 2 - Pjesa 2***************************** -->
+                  <dt>Numri total i linjave<br> me qira të marra<br> nga rrjetet tjera:</dt>
+                  <dd>{{ report['linjat_me_qera']['te_marra']["kombtare/nderkombtare2"] }}</dd>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['linjat_me_qera']['te_marra']["temarranjesia"] }}</dd>
+                  <dt>Sasia:</dt>
+                  <dd>{{ report['linjat_me_qera']['te_marra']["temarrasasia"] }}</dd>
+                  <dt>Komente"</dt>
+                  <dd>{{ report['linjat_me_qera']['te_marra']["temarrakomente"] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
+            <!--*****************HAPI 3***************************** -->
+                  <dt>Llojet e linjave me qera:</dt>
+                  <dd>{{ report['Kapaciteti_total']["llojet_kapacitetev_linjav_meqera_nrrjet"] }}</dd>
+                  <dt>Segmentet Terminuse:</dt>
+                  <dd>{{ report['Kapaciteti_total']["segmente_terminuese_"] }}</dd>
+                  <dt>Trunk segmente:</dt>
+                  <dd>{{ report['Kapaciteti_total']["trunk_segmente_"] }}</dd>
+                  <dt>Segmentet Nderkombetare:</dt>
+                  <dd>{{ report['Kapaciteti_total']["segment_nderkombetare_"] }}</dd>
+                  <dt>Te tjera:</dt>
+                  <dd>{{ report['Kapaciteti_total']["te_tjera_"] }}</dd>
+                  <dt>Perkufizime te tjera:</dt>
+                  <dd>{{ report['Kapaciteti_total']["perkufizime_te_tjera_"] }}</dd>
+                  <dt>Te tjera 2:</dt>
+                  <dd>{{ report['Kapaciteti_total']["te_tjera_2_"] }}</dd>
+                  <dt>Perkufizime te tjera 2:</dt>
+                  <dd>{{ report['Kapaciteti_total']["Perkufizime_2_te_tjera_"] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Kapaciteti_total']["komente_"] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
+          <!--*************************HAPI 4***************************** -->
+
+
                 </dl>
             </div>
         </div>

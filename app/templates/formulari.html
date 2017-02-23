@@ -209,7 +209,7 @@
                  <td></td>
                  <td>
                    <div class="mui-select">
-                     <select>
+                     <select name="Nr_total_linja_qira_ofruara_rrjete_tjera_1">
                        <option> Kombëtare</option>
                        <option> Ndërkombëtare</option>
                      </select>
@@ -219,19 +219,19 @@
 
                  <td>
                    <div class="mui-textfield mui-textfield--float-label disabled">
-                    <input type="text" name="njesia_kombetare" value="LINJA">
+                    <input type="text" name="njesia_ofruara" value="LINJA">
                     <label></label>
                   </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="number" name="sasia_kombetare" required>
+                     <input type="number" name="sasia_ofruara" required>
                      <label>Sasia</label>
                    </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" name="komente_kombetare" required>
+                     <input type="text" name="komente_ofruara" required>
                      <label>Komente</label>
                    </div>
                  </td>
@@ -246,7 +246,7 @@
                  <td>
 
                    <div class="mui-select">
-                     <select>
+                     <select name="Nr_total_linja_qira_ofruara_rrjete_tjera_2">
                        <option>Kombëtare</option>
                        <option>Ndërkombëtare</option>
                      </select>
@@ -256,19 +256,19 @@
 
                  <td>
                    <div class="mui-textfield mui-textfield--float-label disabled">
-                    <input type="text" name="temarra_njesia_kombetare" value="LINJA">
+                    <input type="text" name="temarra_njesia" value="LINJA">
                     <label></label>
                   </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="number" name="temarra_sasia_kombetare" required>
+                     <input type="number" name="temarra_sasia" required>
                      <label>Sasia</label>
                    </div>
                  </td>
                  <td>
                    <div class="mui-textfield mui-textfield--float-label">
-                     <input type="text" name="temarra_komente_kombetare" required>
+                     <input type="text" name="temarra_komente" required>
                      <label>Komente</label>
                    </div>
                  </td>
@@ -279,7 +279,7 @@
 
 
            <div class="valign-wrapper" >
-           <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
               <div class="mdl-tabs__tab-bar ">
                 <div class="menu">
                     <a href="#step-1" class="mdl-tabs__tab  is-active">
@@ -314,7 +314,7 @@
                 </div>
               </div>
             </div>
-          </div>
+           </div>
           <div class="panel panel-primary">    </div>
 
   </div>
@@ -333,15 +333,15 @@
             <legend> <h4> Kapaciteti total i furnizimit të linjave me qira ne rrjet: </h4></legend>
 
               <div class="mui-select">
-              <select>
-                <option value="deri_ne_dhe_perfshire_64Kb/s">Deri në dhe përfshirë 64 Kb/s</option>
-                <option  value="deri_dhe_perfshire_2Mb/s">Deri dhe përfshirë 2Mb/s</option>
-                <option value="deri_ne_dhe_perfshire_34Mb/s">Deri  në dhe përfshirë 34Mb/s</option>
-                <option value="140_Mbps">140 Mbps </option>
-                <option value="STM_1">STM 1</option>
-                <option value="STM_16">STM 16</option>
-                <option value="STM_64">STM 64</option>
-                <option value="STM_tjera">Të tjera</option>
+              <select name="Kapaciteti_total_furnizimit_linjave_me_qira_ne_rrjet">
+                <option >Deri në dhe përfshirë 64 Kb/s</option>
+                <option >Deri dhe përfshirë 2Mb/s</option>
+                <option >Deri  në dhe përfshirë 34Mb/s</option>
+                <option >140 Mbps </option>
+                <option >STM 1</option>
+                <option >STM 16</option>
+                <option >STM 64</option>
+                <option >Të tjera</option>
               </select>
               <label>Kapaciteti total i furnizimit të linjave me qira ne rrjet</label>
             </div>
@@ -418,7 +418,7 @@
 
           <!-- kolona9-->
           <div class="col-md- col-lg-12">
-            <legend> <h4>3.9 Përkufizime 2 të tjera</h4></legend>
+            <legend> <h4>Përkufizime 2 të tjera</h4></legend>
               <div class="mui-textfield mui-textfield--float-label">
                 <input type="text" name="Perkufizime_2_te_tjera" required>
                 <label>Përkufizime 2 të tjera</label>
@@ -444,9 +444,10 @@
 
        </form>
 
+
       </div>
       <div class="valign-wrapper" >
-      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
          <div class="mdl-tabs__tab-bar ">
            <div class="menu">
                <a href="#step-1" class="mdl-tabs__tab  is-active">
@@ -481,8 +482,8 @@
            </div>
          </div>
        </div>
-     </div>
-     <div class="panel panel-primary">    </div>
+      </div>
+      <div class="panel panel-primary">    </div>
     </div>
 
 <!---***************************** hapi 4 **********************************************-->
@@ -525,42 +526,42 @@
 
                           <div class="col-md- col-lg-1">
                             <div class="mui-textfield mui-textfield--float-label disabled">
-                             <input type="text" value="Njësi">
+                             <input type="text" name="njesia_analoge" value="Njësi">
                              <label>Njësi</label>
                              </div>
                           </div>
 
                           <div class="col-md- col-lg-2">
                             <div class="mui-textfield mui-textfield--float-label ">
-                            <input type="text" name="" required>
+                            <input type="text" name="10km_analoge" required>
                             <label>Me te vegjla se 10 km</label>
                            </div>
                          </div>
 
                          <div class="col-md- col-lg-2">
                            <div class="mui-textfield mui-textfield--float-label ">
-                           <input type="text" name="" required>
+                           <input type="text" name="10KM_deri_50km_analoge" required>
                            <label>10km deri 50km</label>
                           </div>
                         </div>
 
                         <div class="col-md- col-lg-2">
                           <div class="mui-textfield mui-textfield--float-label ">
-                          <input type="text" name="" required>
+                          <input type="text" name="51KM_deri_100km_analoge" required>
                           <label>51km deri 100km</label>
                          </div>
                        </div>
 
                        <div class="col-md- col-lg-2">
                          <div class="mui-textfield mui-textfield--float-label ">
-                         <input type="text" name="" required>
+                         <input type="text" name="100km_analoge" required>
                          <label>  >100km </label>
                         </div>
                       </div>
 
                       <div class="col-md- col-lg-12">
                         <div class="mui-textfield mui-textfield--float-label ">
-                        <input type="text" name="" required>
+                        <input type="text" name="komente_analoge" required>
                         <label>  Komente</label>
                        </div>
                      </div>

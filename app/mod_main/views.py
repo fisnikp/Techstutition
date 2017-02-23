@@ -87,7 +87,7 @@ def form():
 			            "100km":form_data['100km_2mbps'],
 			            "komente":form_data['komente_2mbps']
 			      },
-			    "2Mbits_deri_ne_34Mbps":{
+			      "2Mbits_deri_ne_34Mbps":{
 			  	        "Njesia": form_data['njesia_34mbps'],
 			            "10KM":form_data['10km_34mbps'],
 			            "10KM_deri_50km":form_data['10KM_deri_50km_34mbps'],
@@ -95,14 +95,54 @@ def form():
 			            "100km":form_data['100km_34mbps'],
 			            "komente":form_data['komente_34mbps']
 			      },
-			    "34Mbps_deri_140_MBPS": {
+			     "34Mbps_deri_140_MBPS":{
 			            "Njesia": form_data['njesia_140mbps'],
 			            "10KM":form_data['10km_140mbps'],
 			            "10KM_deri_50km":form_data['10KM_deri_50km_140mbps'],
 			            "51_deri_100km":form_data['51KM_deri_100km_140mbps'],
 			            "100km":form_data['100km_140mbps'],
 			            "komente":form_data['komente_140mbps']
-			      }
+			      },
+				  "140_Mbps": {
+  			            "Njesia": form_data['njesia140mbps'],
+  			            "10KM":form_data['10km140mbps'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km140mbps'],
+  			            "51_deri_100km":form_data['51KM_deri_100km140mbps'],
+  			            "100km":form_data['100km140mbps'],
+  			            "komente":form_data['komente140mbps']
+  			      },
+				  "stm_1": {
+  			            "Njesia": form_data['njesia_stm1'],
+  			            "10KM":form_data['10km_stm1'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm1'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm1'],
+  			            "100km":form_data['100km_stm1'],
+  			            "komente":form_data['komente_stm1']
+  			      },
+				  "stm_16": {
+  			            "Njesia": form_data['njesia_stm16'],
+  			            "10KM":form_data['10km_stm16'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm16'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm16'],
+  			            "100km":form_data['100km_stm16'],
+  			            "komente":form_data['komente_stm16']
+  			      },
+				  "stm_64": {
+  			            "Njesia": form_data['njesia_stm64'],
+  			            "10KM":form_data['10km_stm64'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm64'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm64'],
+  			            "100km":form_data['100km_stm64'],
+  			            "komente":form_data['komente_stm64']
+  			      },
+				  "linja_tjera_meqera_ofruara": {
+  			            "Njesia": form_data['njesia_meqera'],
+  			            "10KM":form_data['10km_meqera'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_meqera'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_meqera'],
+  			            "100km":form_data['100km_meqera'],
+  			            "komente":form_data['komente_meqera']
+  			      },
 		 }
 	  }
 		db.insert(data)

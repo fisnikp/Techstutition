@@ -281,7 +281,7 @@ def form():
                         "euro":form_data['euro_tarifat_34mbps_UK_pakice'],
                         "Komente":form_data['komente_tarifat_34mbps_UK_pakice']
                 }
-        },#**********************hapi 8******************
+        },#**********************hapi8******************
 		"tarifat_e_linjav_me_qera_shumice":{
 			   "2mbps-2km":{
 					   "euro":form_data['euro_tarifat_2mbps_2km_shumice'],
@@ -315,8 +315,43 @@ def form():
 					   "euro":form_data['euro_tarifat_34mbps_UK_shumice'],
 					   "Komente":form_data['komente_tarifat_34mbps_UK_shumice']
 			   }
-	   }
-	  }
+	   },#**********************hapi9****************
+	   "Detaje_te_linjave_me_qera_teperdorura_tedhena":{
+			   "9_1":{
+					   "kapaciteti":form_data['detaje_kapaciteti_9_1'],
+					   "tipi_kombetare/nderkombetare":form_data['detaje_kombetare_nderkombetare_9_1'],
+			           "operatori_furnizues_emri_operatorit":form_data['detaje_emri_9_1'],
+			           "lloji_pageses":form_data['detaje_pagesa_9_1'],
+			           "euro":form_data['detaje_euro_9_1'],
+				       "komente":form_data['detaje_komente_9_1']
+			   },
+			   "9_2":{
+					   "kapaciteti":form_data['detaje_kapaciteti_9_2'],
+					   "tipi_kombetare/nderkombetare":form_data['detaje_kombetare_nderkombetare_9_2'],
+			           "operatori_furnizues_emri_operatorit":form_data['detaje_emri_9_2'],
+			           "lloji_pageses":form_data['detaje_pagesa_9_2'],
+			           "euro":form_data['detaje_euro_9_2'],
+				       "komente":form_data['detaje_komente_9_2']
+	           },
+			   "9_3":{
+					   "kapaciteti":form_data['detaje_kapaciteti_9_3'],
+					   "tipi_kombetare/nderkombetare":form_data['detaje_kombetare_nderkombetare_9_3'],
+			           "operatori_furnizues_emri_operatorit":form_data['detaje_emri_9_3'],
+			           "lloji_pageses":form_data['detaje_pagesa_9_3'],
+			           "euro":form_data['detaje_euro_9_3'],
+				       "komente":form_data['detaje_komente_9_3']
+	           },
+			   "9_4_pagesa_totale":{
+					   "kapaciteti":form_data['detaje_kapaciteti_9_4'],
+					   "tipi_kombetare/nderkombetare":form_data['detaje_kombetare_nderkombetare_9_4'],
+			           "operatori_furnizues_emri_operatorit":form_data['detaje_emri_9_4'],
+			           "lloji_pageses":form_data['detaje_pagesa_9_4'],
+			           "euro":form_data['detaje_euro_9_4'],
+				       "komente":form_data['detaje_komente_9_4']
+	           }
+
+       }
+	}
 		db.insert(data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )
 

@@ -28,8 +28,8 @@ def form():
             "personi_kontaktues":form_data['personi_kontaktues'],
             "telefoni":form_data['telefoni'],
             "email":form_data['email'],
-          },
-		   "linjat_me_qera":{ #hapi-2
+          },#******hapi-2*************
+		   "linjat_me_qera":{
 		      "ofruara":{
 			    "kombtare/nderkombtare" : form_data['Nr_total_linja_qira_ofruara_rrjete_tjera_1'],
 	            "njesiaofruara":form_data['njesia_ofruara'],
@@ -42,8 +42,8 @@ def form():
 	            "temarrasasia":form_data['temarra_sasia'],
 				"temarrakomente":form_data['temarra_komente']
 			  }
-	      },
-		  "Kapaciteti_total":{ #hapi3
+	      }, #*********hapi3***********
+		  "Kapaciteti_total":{
 	               "llojet_kapacitetev_linjav_meqera_nrrjet":form_data['Kapaciteti_total_furnizimit_linjave_me_qira_ne_rrjet'],
 	               "segmente_terminuese_":form_data['segmente_terminuese'],
 	               "trunk_segmente_":form_data['trunk_segmente'],
@@ -53,8 +53,8 @@ def form():
 	               "te_tjera_2_":form_data['te_tjera_2'],
 	               "Perkufizime_2_te_tjera_":form_data['Perkufizime_2_te_tjera'],
 	               "komente_":form_data['komentet']
-	     },
-		 "Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice":{ #************hapi 4
+	     }, #************hapi 4******
+		 "Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice":{
 			       "Linja_Analoge_me_qira":{
 			            "Njesia": form_data['njesia_analoge'],
 			            "10KM":form_data['10km_analoge'],
@@ -142,8 +142,180 @@ def form():
   			            "51_deri_100km":form_data['51KM_deri_100km_meqera'],
   			            "100km":form_data['100km_meqera'],
   			            "komente":form_data['komente_meqera']
+  			      }
+		 }, #************hapi 5*****************
+		 "Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice":{
+			       "Linja_Analoge_me_qira_shumice":{
+			            "Njesia": form_data['njesia_analoge_shumice'],
+			            "10KM":form_data['10km_analoge_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_analoge_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_analoge_shumice'],
+			            "100km":form_data['100km_analoge_shumice'],
+			            "komente":form_data['komente_analoge_shumice']
+			      },
+			       "Linja_digjitale_shumice":{
+					    "Njesia": form_data['njesia_digjitale_shumice'],
+			            "10KM":form_data['10km_digjitale_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_digjitale_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_digjitale_shumice'],
+			            "100km":form_data['100km_digjitale_shumice'],
+			            "komente":form_data['komente_digjitale_shumice']
+			      },
+			      "Deri_ne_64_kbps_shumice":{
+				        "Njesia": form_data['njesia_64kbps_shumice'],
+			            "10KM":form_data['10km_64kbps_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_64kbps_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_64kbps_shumice'],
+			            "100km":form_data['100km_64kbps_shumice'],
+			            "komente":form_data['komente_64kbps_shumice']
+			     },
+			     "64_kbps_deri_ne_2mbps_shumice":{
+			            "Njesia": form_data['njesia_2mbps_shumice'],
+			            "10KM":form_data['10km_2mbps_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_2mbps_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_2mbps_shumice'],
+			            "100km":form_data['100km_2mbps_shumice'],
+			            "komente":form_data['komente_2mbps_shumice']
+			      },
+			      "2Mbits_deri_ne_34Mbps_shumice":{
+			  	        "Njesia":form_data['njesia_34mbps_shumice'],
+			            "10KM":form_data['10km_34mbps_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_34mbps_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_34mbps_shumice'],
+			            "100km":form_data['100km_34mbps_shumice'],
+			            "komente":form_data['komente_34mbps_shumice']
+			      },
+			     "34Mbps_deri_140_MBPS_shumice":{
+			            "Njesia": form_data['njesia_140mbps_shumice'],
+			            "10KM":form_data['10km_140mbps_shumice'],
+			            "10KM_deri_50km":form_data['10KM_deri_50km_140mbps_shumice'],
+			            "51_deri_100km":form_data['51KM_deri_100km_140mbps_shumice'],
+			            "100km":form_data['100km_140mbps_shumice'],
+			            "komente":form_data['komente_140mbps_shumice']
+			      },
+				  "140_Mbps_shumice": {
+  			            "Njesia": form_data['njesia140mbps_shumice'],
+  			            "10KM":form_data['10km140mbps_shumice'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km140mbps_shumice'],
+  			            "51_deri_100km":form_data['51KM_deri_100km140mbps_shumice'],
+  			            "100km":form_data['100km140mbps_shumice'],
+  			            "komente":form_data['komente140mbps_shumice']
   			      },
-		 }
+				  "stm_1_shumice": {
+  			            "Njesia": form_data['njesia_stm1_shumice'],
+  			            "10KM":form_data['10km_stm1_shumice'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm1_shumice'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm1_shumice'],
+  			            "100km":form_data['100km_stm1_shumice'],
+  			            "komente":form_data['komente_stm1_shumice']
+  			      },
+				  "stm_16_shumice": {
+  			            "Njesia": form_data['njesia_stm16_shumice'],
+  			            "10KM":form_data['10km_stm16_shumice'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm16_shumice'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm16_shumice'],
+  			            "100km":form_data['100km_stm16_shumice'],
+  			            "komente":form_data['komente_stm16_shumice']
+  			      },
+				  "stm_64_shumice": {
+  			            "Njesia": form_data['njesia_stm64_shumice'],
+  			            "10KM":form_data['10km_stm64_shumice'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_stm64_shumice'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_stm64_shumice'],
+  			            "100km":form_data['100km_stm64_shumice'],
+  			            "komente":form_data['komente_stm64_shumice']
+  			      },
+				  "linja_tjera_meqera_ofruara_shumice": {
+  			            "Njesia": form_data['njesia_meqera_shumice'],
+  			            "10KM":form_data['10km_meqera_shumice'],
+  			            "10KM_deri_50km":form_data['10KM_deri_50km_meqera_shumice'],
+  			            "51_deri_100km":form_data['51KM_deri_100km_meqera_shumice'],
+  			            "100km":form_data['100km_meqera_shumice'],
+  			            "komente":form_data['komente_meqera_shumice']
+  			      }
+		 },#*********************Hapi 6***************
+		 "te_ardhuratnga_linjat_me_qera":{
+		         "te_ardhurat_nga_sherbimet_me_pakice":{
+			            "euro":form_data['euro_ardhurat_pakice'],
+				        "komente":form_data['komente_ardhurat_pakice']
+		          },
+                  "te_ardhurat_nga_sherbimet_me_shumice": {
+					    "euro":form_data['euro_ardhurat_shumice'],
+					    "komente":form_data['komente_ardhurat_shumice']
+                  },
+                 "te_ardhurat_nga_sherbimet_totali": {
+					    "euro":form_data['euro_ardhurat_totali'],
+					    "komente":form_data['komente_ardhurat_totali']
+                  }
+         },#**********************hapi 7******************
+		 "tarifat_e_linjav_me_qera_pakice":{
+                "2mbps-2km":{
+                        "euro":form_data['euro_tarifat_2mbps_2km_pakice'],
+                        "Komente":form_data['komente_tarifat_2mbps_2km_pakice']
+                },
+                "34mbps-2km":{
+                        "euro":form_data['euro_tarifat_34mbps_2km_pakice'],
+                        "Komente":form_data['komente_tarifat_34mbps_2km_pakice']
+                },
+                "2mbps-50":{
+                        "euro":form_data['euro_tarifat_2mbps_50_pakice'],
+                        "Komente":form_data['komente_tarifat_2mbps_50_pakice']
+                },
+                "34mbps-50":{
+                        "euro":form_data['euro_tarifat_34mbps_50_pakice'],
+                        "Komente":form_data['komente_tarifat_34mbps_50_pakice']
+                },
+                "2mbps-kufi":{
+                        "euro":form_data['euro_tarifat_2mbps_kufi_pakice'],
+                        "Komente":form_data['komente_tarifat_2mbps_kufi_pakice']
+                },
+                "34mbps-kufi":{
+                        "euro":form_data['euro_tarifat_34mbps_kufi_pakice'],
+                        "Komente":form_data['komente_tarifat_34mbps_kufi_pakice']
+                },
+                "2mbps-UK":{
+                        "euro":form_data['euro_tarifat_2mbps_UK_pakice'],
+                        "Komente":form_data['komente_tarifat_2mbps_UK_pakice']
+                },
+                "34mbps-deri-UK":{
+                        "euro":form_data['euro_tarifat_34mbps_UK_pakice'],
+                        "Komente":form_data['komente_tarifat_34mbps_UK_pakice']
+                }
+        },#**********************hapi 8******************
+		"tarifat_e_linjav_me_qera_shumice":{
+			   "2mbps-2km":{
+					   "euro":form_data['euro_tarifat_2mbps_2km_shumice'],
+					   "Komente":form_data['komente_tarifat_2mbps_2km_shumice']
+			   },
+			   "34mbps-2km":{
+					   "euro":form_data['euro_tarifat_34mbps_2km_shumice'],
+					   "Komente":form_data['komente_tarifat_34mbps_2km_shumice']
+			   },
+			   "2mbps-50":{
+					   "euro":form_data['euro_tarifat_2mbps_50_shumice'],
+					   "Komente":form_data['komente_tarifat_2mbps_50_shumice']
+			   },
+			   "34mbps-50":{
+					   "euro":form_data['euro_tarifat_34mbps_50_shumice'],
+					   "Komente":form_data['komente_tarifat_34mbps_50_shumice']
+			   },
+			   "2mbps-kufi":{
+					   "euro":form_data['euro_tarifat_2mbps_kufi_shumice'],
+					   "Komente":form_data['komente_tarifat_2mbps_kufi_shumice']
+			   },
+			   "34mbps-kufi":{
+					   "euro":form_data['euro_tarifat_34mbps_kufi_shumice'],
+					   "Komente":form_data['komente_tarifat_34mbps_kufi_shumice']
+			   },
+			   "2mbps-UK":{
+					   "euro":form_data['euro_tarifat_2mbps_UK_shumice'],
+					   "Komente":form_data['komente_tarifat_2mbps_UK_shumice']
+			   },
+			   "34mbps-deri-UK":{
+					   "euro":form_data['euro_tarifat_34mbps_UK_shumice'],
+					   "Komente":form_data['komente_tarifat_34mbps_UK_shumice']
+			   }
+	   }
 	  }
 		db.insert(data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )

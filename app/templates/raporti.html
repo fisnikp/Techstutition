@@ -9,6 +9,7 @@
                 <dl class="dl-horizontal">
           <!--****************************HAPI 1**************************************** -->
                   <div class="panel panel-primary">    </div>
+                  <legend class="center-align">1. Të dhënat për ndërmarrjen</legend>
                   <dt>Emri:</dt>
                   <dd>{{ report['nderrmarja']['emri'] }}</dd>
                   <dt >Personi kontaktues:</dt>
@@ -24,6 +25,8 @@
                   <br>
                   <div class="panel panel-primary">    </div>
             <!--****************************HAPI 2**************************************** -->
+                  <legend class="center-align">2. Numri i linjave me qira </legend>
+                  <h4 class="center-align">Numri total i linjave me qira të ofruara nga rrjetet tjera:</h4>
                   <dt>Numri total i linjave<br> me qira të ofruara<br> nga rrjetet tjera:</dt>
                   <dd>{{ report['linjat_me_qera']['ofruara']["kombtare/nderkombtare"] }}</dd>
                   <dt>Njesia: </dt>
@@ -35,6 +38,7 @@
                   <br>
 
                   <!--*****************HAPI 2 - Pjesa 2***************************** -->
+                  <h4 class="center-align">Numri total i linjave me qira të ofruara nga rrjetet tjera:</h4>
                   <dt>Numri total i linjave<br> me qira të marra<br> nga rrjetet tjera:</dt>
                   <dd>{{ report['linjat_me_qera']['te_marra']["kombtare/nderkombtare2"] }}</dd>
                   <dt>Njesia:</dt>
@@ -47,6 +51,8 @@
                   <div class="panel panel-primary">    </div>
 
             <!--*****************HAPI 3***************************** -->
+                  <legend class="center-align">3. Infrastruktura rrjetit </legend>
+                  <h4 class="center-align">Kapaciteti total i furnizimit të linjave me qira ne rrjet</h4>
                   <dt>Llojet e linjave me qera:</dt>
                   <dd>{{ report['Kapaciteti_total']["llojet_kapacitetev_linjav_meqera_nrrjet"] }}</dd>
                   <dt>Segmentet Terminuse:</dt>
@@ -69,6 +75,505 @@
                   <div class="panel panel-primary">    </div>
 
           <!--*************************HAPI 4***************************** -->
+                  <legend class="center-align">4.Shërbime të ofruara me pakicë </legend>
+                  <h4 class="center-align">Linja analoge me qira</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_Analoge_me_qira"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 2***************************** -->
+                  <h4 class="center-align">Linja digjitale</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Linja_digjitale"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 3***************************** -->
+                  <h4 class="center-align">Deri ne 64 kbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["Deri_ne_64_kbps"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 4***************************** -->
+                  <h4 class="center-align">64 kbps deri ne 2Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["64_kbps_deri_ne_2mbps"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 5***************************** -->
+                  <h4 class="center-align">2Mbit/s deri ne 34Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["2Mbits_deri_ne_34Mbps"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 6***************************** -->
+                  <h4 class="center-align">34Mbps deri 140 Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["34Mbps_deri_140_MBPS"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 7***************************** -->
+                  <h4 class="center-align">140 Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["140_Mbps"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 8***************************** -->
+                  <h4 class="center-align">STM 1</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_1"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 9***************************** -->
+                  <h4 class="center-align">STM 16</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_16"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 10***************************** -->
+                  <h4 class="center-align">STM 64</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["stm_64"]['komente'] }}</dd>
+                  <!--*************************HAPI 4/ pjesa 11***************************** -->
+                  <h4 class="center-align">Linjat tjera te ofruara me qera</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_pakice']["linja_tjera_meqera_ofruara"]['komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
+        <!--*************************HAPI 5***************************** -->
+                  <legend class="center-align">5. Shërbime të ofruara me shumicë </legend>
+                  <h4 class="center-align">Linja analoge me qira</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_Analoge_me_qira_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 2***************************** -->
+                  <h4 class="center-align">Linja digjitale</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Linja_digjitale_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 3***************************** -->
+                  <h4 class="center-align">Deri ne 64 kbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["Deri_ne_64_kbps_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 4***************************** -->
+                  <h4 class="center-align">64 kbps deri ne 2Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["64_kbps_deri_ne_2mbps_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 5***************************** -->
+                  <h4 class="center-align">2Mbit/s deri ne 34Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["2Mbits_deri_ne_34Mbps_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 6***************************** -->
+                  <h4 class="center-align">34Mbps deri 140 Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["34Mbps_deri_140_MBPS_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 7***************************** -->
+                  <h4 class="center-align">140 Mbps</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["140_Mbps_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 8***************************** -->
+                  <h4 class="center-align">STM 1</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_1_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 9***************************** -->
+                  <h4 class="center-align">STM 16</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_16_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 10***************************** -->
+                  <h4 class="center-align">STM 64</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["stm_64_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 5/ pjesa 11***************************** -->
+                  <h4 class="center-align">Linjat tjera te ofruara me qera</h4>
+                  <dt>Njesia:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['Njesia'] }}</dd>
+                  <dt>Me te vegjla se 10km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['10KM'] }}</dd>
+                  <dt>10km deri 50km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['10KM_deri_50km'] }}</dd>
+                  <dt>51km deri 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['51_deri_100km'] }}</dd>
+                  <dt>me te medha se 100km:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['100km'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Llojet_e_Linjave_me_qira_shperndara_perdoruesit_shumice']["linja_tjera_meqera_ofruara_shumice"]['komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+      <!--*************************HAPI 6***************************** -->
+                  <legend class="center-align">6.Të ardhurat nga ofrimi I shërbimeve të linjave me qira </legend>
+                  <h4 class="center-align">Te ardhurat nga sherbimet me pakice</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_me_pakice"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_me_pakice"]['komente'] }}</dd>
+                  <!--*************************HAPI 6/pjesa2***************************** -->
+                  <h4 class="center-align">Te ardhurat nga sherbimet me shumice</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_me_shumice"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_me_shumice"]['komente'] }}</dd>
+                  <!--*************************HAPI 6/pjesa3***************************** -->
+                  <h4 class="center-align">Te ardhurat nga sherbimet Totali</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_totali"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['te_ardhuratnga_linjat_me_qera']["te_ardhurat_nga_sherbimet_totali"]['komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+    <!--*************************HAPI 7***************************** -->
+                  <legend class="center-align">7. Tarifat e shërbimeve me pakicë </legend>
+                  <h4 class="center-align">Mbps deri në 2 km</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-2km"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-2km"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa2***************************** -->
+                  <h4 class="center-align">34 Mbps deri në 2 km</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-2km"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-2km"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa3***************************** -->
+                  <h4 class="center-align">2 Mbps deri në deri 50</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-50"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-50"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa4***************************** -->
+                  <h4 class="center-align">34Mbps deri në deri 50</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-50"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-50"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa6***************************** -->
+                  <h4 class="center-align">2Mbps deri në kufi</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-kufi"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-kufi"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa7***************************** -->
+                  <h4 class="center-align">34Mbps deri në kufi</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-kufi"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-kufi"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa8***************************** -->
+                  <h4 class="center-align">2Mbps deri në UK (Londër)</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-UK"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["2mbps-UK"]['Komente'] }}</dd>
+                  <!--*************************HAPI 7/pjesa9***************************** -->
+                  <h4 class="center-align">34 Mbps deri në UK (Londër)</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-deri-UK"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_pakice']["34mbps-deri-UK"]['Komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
+    <!--*************************HAPI 8***************************** -->
+                  <legend class="center-align">8. Tarifat e shërbimeve me shumicë </legend>
+                  <h4 class="center-align">Mbps deri në 2 km</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-2km"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-2km"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa2***************************** -->
+                  <h4 class="center-align">34 Mbps deri në 2 km</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-2km"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-2km"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa3***************************** -->
+                  <h4 class="center-align">2 Mbps deri në deri 50</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-50"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-50"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa4***************************** -->
+                  <h4 class="center-align">34Mbps deri në deri 50</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-50"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-50"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa6***************************** -->
+                  <h4 class="center-align">2Mbps deri në kufi</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-kufi"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-kufi"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa7***************************** -->
+                  <h4 class="center-align">34Mbps deri në kufi</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-kufi"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-kufi"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa8***************************** -->
+                  <h4 class="center-align">2Mbps deri në UK (Londër)</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-UK"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["2mbps-UK"]['Komente'] }}</dd>
+                  <!--*************************HAPI 8/pjesa9***************************** -->
+                  <h4 class="center-align">34 Mbps deri në UK (Londër)</h4>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-deri-UK"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['tarifat_e_linjav_me_qera_shumice']["34mbps-deri-UK"]['Komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
+    <!--*************************HAPI 9***************************** -->
+                  <legend class="center-align">9. Detaje të linjave me qera të cilat ju përdorni dhe merren nga operatorët e tjere</legend>
+                  <h4 class="center-align">Llojet e e linjave me qira 1</h4>
+                  <dt>Kapaciteti:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['kapaciteti'] }}</dd>
+                  <dt>Tipi:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['tipi_kombetare/nderkombetare'] }}</dd>
+                  <dt>Emri i operatorit furnizues:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['operatori_furnizues_emri_operatorit'] }}</dd>
+                  <dt>Lloji pageses:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['lloji_pageses'] }}</dd>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_1"]['komente'] }}</dd>
+                  <!--*************************HAPI 9/pjesa2***************************** -->
+                  <h4 class="center-align">Llojet e e linjave me qira 2</h4>
+                  <dt>Kapaciteti:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['kapaciteti'] }}</dd>
+                  <dt>Tipi:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['tipi_kombetare/nderkombetare'] }}</dd>
+                  <dt>Emri i operatorit furnizues:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['operatori_furnizues_emri_operatorit'] }}</dd>
+                  <dt>Lloji pageses:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['lloji_pageses'] }}</dd>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_2"]['komente'] }}</dd>
+                  <!--*************************HAPI 9/pjesa3***************************** -->
+                  <h4 class="center-align">Llojet e e linjave me qira 3</h4>
+                  <dt>Kapaciteti:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['kapaciteti'] }}</dd>
+                  <dt>Tipi:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['tipi_kombetare/nderkombetare'] }}</dd>
+                  <dt>Emri i operatorit furnizues:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['operatori_furnizues_emri_operatorit'] }}</dd>
+                  <dt>Lloji pageses:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['lloji_pageses'] }}</dd>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_3"]['komente'] }}</dd>
+                  <!--*************************HAPI 9/pjesa4***************************** -->
+                  <h4 class="center-align">Llojet e e linjave me qira 4</h4>
+                  <dt>Kapaciteti:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['kapaciteti'] }}</dd>
+                  <dt>Tipi:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['tipi_kombetare/nderkombetare'] }}</dd>
+                  <dt>Emri i operatorit furnizues:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['operatori_furnizues_emri_operatorit'] }}</dd>
+                  <dt>Lloji pageses:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['lloji_pageses'] }}</dd>
+                  <dt>Euro:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['euro'] }}</dd>
+                  <dt>Komente:</dt>
+                  <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['komente'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
+
 
 
                 </dl>

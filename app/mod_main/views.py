@@ -21,6 +21,12 @@ def form():
 		form_data = request.form.to_dict()
 		print form_data
 		data = {
+		  "data_plotesimit_formularit":{
+		      "tremujori":form_data['tremujori'],
+			  "i_vitit":form_data['ivitit'],
+		   	  "peridudhaprej":form_data['periudhaprejj'],
+			  "peiudhaderi":form_data['peridudhaderime']
+ 		  },
           "nderrmarja":{
             "emri":form_data['emri_ndermarrjes'],
             "numri_regjistrimi":form_data['nr_regjistrimit'],
@@ -350,7 +356,11 @@ def form():
 				       "komente":form_data['detaje_komente_9_4']
 	           }
 
-       }
+       },
+	   "data_plotesimit_formularit_fund":{
+		       "data_fund":form_data['data_fund'],
+		       "emridorezuesit":form_data['emri_dorezuesit']
+	   }
 	}
 		db.insert(data)
 		return render_template("formulari.html", mesazhi="Falemderit, forma u plotesua" )

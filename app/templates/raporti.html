@@ -7,7 +7,19 @@
             <div class="col-md-4 col-md-offset-4  ">
                 <br /><br /><br />
                 <dl class="dl-horizontal">
-          <!--****************************HAPI 1**************************************** -->
+    <!--****************************data**************************************** -->
+                  <div class="panel panel-primary">    </div>
+                  <legend class="center-align">PYETËSORI PËR OFRUESIT E SHËRBIMEVE TË LINJAVE ME QERA</legend>
+                  <dt>Tremujori i:</dt>
+                  <dd>{{ report['data_plotesimit_formularit']['tremujori'] }}</dd>
+                  <dt>Viti:</dt>
+                  <dd>{{ report['data_plotesimit_formularit']['i_vitit'] }}</dd>
+                  <dt>Periudha prej:</dt>
+                  <dd>{{ report['data_plotesimit_formularit']['peridudhaprej'] }}</dd>
+                  <dt>Periudha deri me:</dt>
+                  <dd>{{ report['data_plotesimit_formularit']['peiudhaderi'] }}</dd>
+
+    <!--****************************HAPI 1**************************************** -->
                   <div class="panel panel-primary">    </div>
                   <legend class="center-align">1. Të dhënat për ndërmarrjen</legend>
                   <dt>Emri:</dt>
@@ -573,9 +585,14 @@
                   <dd>{{ report['Detaje_te_linjave_me_qera_teperdorura_tedhena']["9_4_pagesa_totale"]['komente'] }}</dd>
                   <br>
                   <div class="panel panel-primary">    </div>
+            <!--*****************data dorezimit fund*****************-->
 
-
-
+                  <dt>Data:</dt>
+                  <dd>{{ report['data_plotesimit_formularit_fund']['data_fund'] }}</dd>
+                  <dt>Emri dhe Mbiemri:</dt>
+                  <dd>{{ report['data_plotesimit_formularit_fund']['emridorezuesit'] }}</dd>
+                  <br>
+                  <div class="panel panel-primary">    </div>
                 </dl>
             </div>
         </div>

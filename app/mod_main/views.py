@@ -7,15 +7,12 @@ mod_main = Blueprint('main', __name__)
 
 
 @mod_main.route('/')
-def index():
+def home():
 	db = mongo.db.arkep
 	return render_template("home.html")
 
 
-@mod_main.route('/index')
-def home():
-	db = mongo.db.arkep
-	return render_template("index.html")
+
 
 @mod_main.route('/formulari', methods=['GET', 'POST'])
 def form():

@@ -12,7 +12,10 @@ def home():
 	return render_template("home.html")
 
 
-
+@mod_main.route('/index')
+def index():
+	db = mongo.db.arkep
+	return render_template("index.html")
 
 @mod_main.route('/formulari', methods=['GET', 'POST'])
 def form():
